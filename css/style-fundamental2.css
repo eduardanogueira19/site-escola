@@ -1,0 +1,699 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões */
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilo cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajuste da altura */
+    background-color: #F4F4F4;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 8px 20px;
+}
+
+/* Garantir que o conteúdo abaixo do header não fique escondido */
+body::before {
+    content: "";
+    display: block;
+    height: 60px; /* Espaço equivalente à altura do header */
+}
+
+/* Estilo imagem abaixo do header */
+.capa {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    
+    border-radius: 5px;
+}
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px;
+}
+
+.galeria-container img {
+    width: 300px;  /* Mantém as imagens no mesmo tamanho */
+    height: 400px; /* Imagens quadradas */
+    object-fit: cover; /* Garante que a imagem preencha o quadrado */
+    border: 5px solid #036602; /* Cor da borda */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra criativa ao redor das imagens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+}
+
+/*Menu hamburguer*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    text-decoration-line: none;
+    display: none;
+}
+
+.visit-button {
+    background-color: #044A03;
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-left: auto;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.visit-button:hover {
+    background-color: #036602;
+}
+
+/*Estilo das escritas*/        
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-size:2rem;
+    text-align: left;
+    color:#044A03;
+}
+
+h2{
+    font-weight: 700;
+    font-size:1.5rem;
+    color:#044A03;
+    margin: 0 0 10px 0;
+    transition: color 0.8s ease; 
+    font-family: 'Poppins', sans-serif; 
+    text-align: left;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size:1.025rem;
+    margin: 0 0 10px 0;
+    color:#044A03;
+    text-align: left;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color:white;
+    margin-top: 10px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color:#044A03;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: black;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; 
+}
+
+/* Estilo do ícone */
+.nav-logo {
+    position: absolute;
+    left: 20px;
+    top:20%;
+    transform: translateY(-20%);
+}
+
+.nav-logo img {
+    width: 65px; 
+    height: 65px;
+    border-radius: 0; 
+}
+
+/* Estilo para lista de navegação */
+.nav-list{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-grow: 1; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    right: 50px;
+    gap: 1px;
+}
+
+nav {
+    flex-grow: 1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #044A03;
+}
+
+main {
+    padding: 5px;
+    margin-top: 0px;
+}
+/*estilo seções*/
+section {
+    margin: 5px 0;
+    padding: 45px 0;
+    background-color: #F4F4F4;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 18px;
+}
+
+.footer-section {
+    color: white;
+    padding: 0px;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #97a197;
+}
+
+.footer-bottom {
+    color: white;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+footer .social-media a{
+    font-size: 45px;
+}
+
+.contato, .direitos{
+    color:white;
+    font-size: 18px;
+}
+
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+
+        
+    main {
+        padding: 25px;
+        margin-top: 0px;
+    }
+    header {
+        height: 60px;
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem; 
+    }
+
+    h3{
+        font-size:0.8rem;
+    }
+
+    h4{
+        font-size:0.6rem;
+    }
+
+    p {
+        font-size: 0.5; 
+    }
+    .nav-logo {
+        position: absolute;
+        left: 20px;
+        top:13%;
+    }
+
+    .nav-logo img {
+        width: 30px; 
+        height: 30px;
+    }
+        
+    /*Menu hamburguer*/
+    .mobile-menu-icon {
+        background-color: rgba(0, 0, 0, 0.1);
+        position:absolute;
+        top:15%;
+        right:5%;
+        display: none;
+        padding:0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 150px;
+        border-radius:15px;
+        right: 0;
+        padding:10px;
+        display: none;
+        margin-top: 40%;
+        margin-right:1%;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .visite-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .visite-button button {
+        width: 100%;
+    }
+
+    .visit-button {
+        position: static;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color:white;
+    }
+
+    .visit-button button a {
+        border:none;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+
+    
+    .prev {
+        left: 5px;
+    }
+    
+    .next {
+        right: 5px;
+    }
+            
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    /*Menu hamburguer*/
+    .mobile-menu-icon {
+        background-color: rgba(0, 0, 0, 0.1);
+        position:absolute;
+        top:15%;
+        right:5%;
+        display: none;
+        padding:0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 150px;
+        border-radius:15px;
+        right: 0;
+        padding:10px;
+        display: none;
+        margin-top: 40%;
+        margin-right:1%;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu.open {
+        display: block; /* Torna o menu visível */
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .visite-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .visite-button button {
+        width: 100%;
+    }
+
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+    
+    .mobile-menu a:visited {
+        color: inherit; /* Garante que a cor não mude após ser clicado */
+    }
+
+    .visit-button {
+        position: static;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color:white;
+    }
+
+    .visit-button button a {
+        border:none;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+    .nav-logo img {
+        width: 65px; 
+        height: 65px;
+    }
+
+    /* Ajuste de padding e margin para seções */
+    section {
+        padding: 25px;
+        margin: 5px 0;
+    }
+
+    a:nth-child(1) {
+        transform: translateY(0px);
+    }
+      
+             
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list li {
+        padding: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+    
+
+    .footer-section {
+        font-size:12px;
+    }
+    
+    footer .social-media a{
+        font-size: 20px;
+    }
+    
+    .contato, .direitos{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        font-size: 14px;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    header {
+        height: 60px;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 10px;
+        top: 15%;
+    }
+
+    .nav-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Menu hambúrguer */
+    .mobile-menu-icon {
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 200px;
+        border-radius: 10px;
+        padding: 8px;
+        display: none;
+        margin-top: 50%;
+    }
+
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+    
+    .mobile-menu a:visited {
+        color: inherit; /* Garante que a cor não mude após ser clicado */
+    }
+
+    .visit-button {
+        margin: 0 auto;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color: white;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 0px 0px;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    footer .social-media {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer .social-media a {
+        font-size: 18px; 
+    }
+
+    .contato,
+    .direitos {
+        font-size: 11px;
+    }
+    section{
+        padding: 30px;
+    }
+}

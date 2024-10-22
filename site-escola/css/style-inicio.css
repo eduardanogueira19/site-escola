@@ -1,0 +1,1042 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões */
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilo cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajuste da altura */
+    background-color: #F4F4F4;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 8px 20px;
+}
+
+/* Garantir que o conteúdo abaixo do header não fique escondido */
+body::before {
+    content: "";
+    display: block;
+    height: 60px; /* Espaço equivalente à altura do header */
+}
+
+/* Estilo imagem abaixo do header */
+.capa {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.slides img{
+    width: 100%;
+    display: none;
+}
+
+.slides img.active{
+    display: block;
+}
+
+button.antes, button.depois {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #036602;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+button.antes{
+    left: 0;
+}
+
+button.depois{
+    right: 0;
+}
+
+/*Menu hamburguer*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Estilo do botão de agendar visita */
+.visit-button {
+    background-color: #044A03;
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-left: auto;
+    top: 15%; 
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.visit-button:hover {
+    background-color: #036602;
+}
+
+/*Estilo das escritas*/        
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-size:2rem;
+    text-align: left;
+    color:#044A03;
+}
+
+h2{
+    font-weight: 700;
+    font-size:1.5rem;
+    color:#044A03;
+    margin: 0 0 10px 0;
+    transition: color 0.8s ease; 
+    font-family: 'Poppins', sans-serif; 
+    text-align: left;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size:1.025rem;
+    margin: 0 0 10px 0;
+    color:#044A03;
+    text-align: left;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color:white;
+    margin-top: 10px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color:#044A03;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: black;
+    font-weight: 300;
+}
+
+/* Garantindo que as imagens sejam responsivas */
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; 
+}
+
+/* Estilo do ícone */
+.nav-logo {
+    position: absolute;
+    left: 20px;
+    top:20%;
+    transform: translateY(-20%);
+}
+
+.nav-logo img {
+    width: 65px; 
+    height: 65px;
+    border-radius: 0; 
+}
+
+/* Estilo para lista de navegação */
+.nav-list{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-grow: 1; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    right: 50px;
+    gap: 1px;
+}
+
+nav {
+    flex-grow: 1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #044A03;
+}
+
+main {
+    padding: 5px;
+    margin-top: 0px;
+}
+/*estilo seções*/
+section {
+    margin: 5px 0;
+    padding: 45px 0;
+    background-color: #F4F4F4;
+}
+
+/*Estilo pilares*/
+.espaco-pilares{
+    background-color: f4f4f4;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width:100%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-item {
+    flex: 1 0 32.3%;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+/* Ajustar o tamanho das imagens para ocupar toda a largura */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de interatividade nas imagens */
+.carousel-item:hover img {
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Setas de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+/* Alinhamento em "escadinha" */
+a:nth-child(1) {
+    transform: translateY(0px);
+}
+
+a:nth-child(2) {
+    transform: translateY(60px);
+}
+
+a:nth-child(3) {
+    transform: translateY(120px);
+}
+
+/* Estilo do container do carrossel */       
+.espaco-carrossel {
+    background-color: #F4F4F4;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.outer-container {
+    background-color: #f4f4f4;
+    width: 380px;
+    padding: 20px;
+    border-radius: 0px;
+    transition: background-color 0.5s ease;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.8s ease; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: border-radius 0.8s ease; 
+}
+
+.plus-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #008000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.outer-container:hover {
+    background-color: #008000;
+}
+
+.outer-container:hover .plus-icon {
+    background-color: #80ff80;
+    color: #006600;
+    border: 2px solid #006600;
+}
+
+.outer-container:hover .image-container img {
+    border-radius: 0px; 
+}
+.outer-container:hover h3 {
+    color: white;
+}
+
+.outer-container:hover .plus-icon {
+    background-color: #80ff80;
+    color: #006600;
+    border: 2px solid #006600;
+}
+
+.outer-container:hover .image-container img {
+    border-radius: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Estilo mapa*/
+.mapa {
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 15px;
+    max-width: 600px;
+    height: 400px;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+    height: 395px;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 18px;
+}
+
+.footer-section {
+    color: white;
+    padding: 0px;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #97a197;
+}
+
+.footer-bottom {
+    color: white;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+footer .social-media a{
+    font-size: 45px;
+}
+
+.contato, .direitos{
+    color:white;
+    font-size: 18px;
+}
+
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+
+        
+    main {
+        padding: 25px;
+        margin-top: 0px;
+    }
+    header {
+        height: 60px;
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem; 
+    }
+
+    h3{
+        font-size:0.8rem;
+    }
+
+    h4{
+        font-size:0.6rem;
+    }
+
+    p {
+        font-size: 0.5; 
+    }
+    .nav-logo {
+        position: absolute;
+        left: 20px;
+        top:13%;
+    }
+
+    .nav-logo img {
+        width: 30px; 
+        height: 30px;
+    }
+        
+    /*Menu hamburguer*/
+    .mobile-menu-icon {
+        background-color: rgba(0, 0, 0, 0.1);
+        position:absolute;
+        top:15%;
+        right:5%;
+        display: none;
+        padding:0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 150px;
+        border-radius:15px;
+        right: 0;
+        padding:10px;
+        display: none;
+        margin-top: 40%;
+        margin-right:1%;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .visite-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .visite-button button {
+        width: 100%;
+    }
+
+    .visit-button {
+        position: static;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color:white;
+    }
+
+    .visit-button button a {
+        border:none;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    
+    .carousel-container {
+        width: 100%;
+        max-width:100%;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        overflow-x: scroll; /* Permite a rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+    }
+
+    .carousel-item {
+        flex: 0 0 50%;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+
+    
+    .prev {
+        left: 5px;
+    }
+    
+    .next {
+        right: 5px;
+    }
+            
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    /*Menu hamburguer*/
+    .mobile-menu-icon {
+        background-color: rgba(0, 0, 0, 0.1);
+        position:absolute;
+        top:15%;
+        right:5%;
+        display: none;
+        padding:0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 150px;
+        border-radius:15px;
+        right: 0;
+        padding:10px;
+        display: none;
+        margin-top: 40%;
+        margin-right:1%;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu.open {
+        display: block; /* Torna o menu visível */
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .visite-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .visite-button button {
+        width: 100%;
+    }
+
+    .visit-button {
+        position: static;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color:white;
+    }
+
+    .visit-button button a {
+        border:none;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+    .nav-logo img {
+        width: 65px; 
+        height: 65px;
+    }
+
+    /* Ajuste de padding e margin para seções */
+    section {
+        padding: 25px;
+        margin: 5px 0;
+    }
+
+    .espaco-carrossel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+    
+    .outer-container {
+        width: 100%;
+        padding: 10px;
+        flex: 0 0 100%; 
+        max-width: none;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: background-color 0.3s ease, transform 0.8s ease; 
+    }
+
+    a:nth-child(1) {
+        transform: translateY(0px);
+    }
+    
+    a:nth-child(2) {
+        transform: translateY(0px);
+    }
+    
+    a:nth-child(3) {
+        transform: translateY(0px);
+    }
+        
+    .plus-icon {
+        top: 5px;
+        right: 5px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+             
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list li {
+        padding: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+    
+
+    .footer-section {
+        font-size:12px;
+    }
+    
+    footer .social-media a{
+        font-size: 20px;
+    }
+    
+    .contato, .direitos{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    /* Impedir rolagem horizontal no corpo da página */
+    html, body {
+        font-size: 14px; /* Tamanho ajustado para telas pequenas */
+        overflow-x: hidden; /* Evita que a página role horizontalmente */
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    header {
+        height: 60px;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 10px;
+        top: 15%;
+    }
+
+    .nav-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Menu hambúrguer */
+    .mobile-menu-icon {
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0.5px;
+        border-radius: 25%;
+    }
+
+    .mobile-menu {
+        background-color: #f4f4f4;
+        width: 200px;
+        border-radius: 10px;
+        padding: 8px;
+        display: none;
+        margin-top: 50%;
+    }
+
+    .visit-button {
+        margin: 0 auto;
+    }
+
+    .visit-button button {
+        border: none;
+        border-radius: 5px;
+        background-color: #044A03;
+        color: white;
+    }
+
+    .visit-button:hover {
+        background-color: #036602;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    /* Seção Pedagógico */
+    .espaco-carrossel {
+        height: auto;
+        display: flex;
+        justify-content: flex-start;  /* Alinha os itens no início */
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        overflow-x: auto; /* Permite a rolagem horizontal */
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    /* Cada item do carrossel */
+    .outer-container {
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+    }
+    
+    /* Contêiner da imagem */
+    .image-container {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0; /* Impede que os itens encolham */
+        padding: 30px;
+        transition: background-color 0.3s ease, transform 0.8s ease;
+    }
+    
+    /* Ícone do mais */
+    .plus-icon {
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+
+    a:nth-child(1) {
+        transform: translateY(0px);
+    }
+    
+    a:nth-child(2) {
+        transform: translateY(0px);
+    }
+    
+    a:nth-child(3) {
+        transform: translateY(0px);
+    }
+    
+    
+
+    /* Carrossel de imagens */
+    .carousel-container {
+        width: 100%;
+        max-width:100%;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        overflow-x: scroll; /* Permite a rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+    }
+
+    .carousel-item {
+        flex: 1 0 90%;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+
+    footer {
+        padding: 0px 0px;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    footer .social-media {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer .social-media a {
+        font-size: 18px; 
+    }
+
+    .contato,
+    .direitos {
+        font-size: 11px;
+    }
+    section{
+        padding: 30px;
+    }
+    .espaco-carrossel, .outer-container, .image-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        transition: background-color 0.3s ease, transform 0.8s ease;
+    }
+
+    .espaco-carrossel img {
+        width: 100%;
+        height: auto;
+    }
+}

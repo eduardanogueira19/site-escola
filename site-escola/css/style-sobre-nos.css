@@ -33,41 +33,6 @@ header {
     align-items: center; /* Centraliza verticalmente os elementos */
     padding: 8px 20px;
 }
-
-/* Garantir que o conteúdo abaixo do header não fique escondido */
-body::before {
-    content: "";
-    display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
-}
-
-/* Estilo imagem abaixo do header */
-.capa {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    
-    border-radius: 5px;
-}
-.galeria-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
-    gap: 20px; /* Espaçamento entre as imagens */
-    padding: 20px;
-}
-
-.galeria-container img {
-    width: 300px;  /* Mantém as imagens no mesmo tamanho */
-    height: 400px; /* Imagens quadradas */
-    object-fit: cover; /* Garante que a imagem preencha o quadrado */
-    border: 5px solid #036602; /* Cor da borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra criativa ao redor das imagens */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
-}
-
 /*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
@@ -224,10 +189,6 @@ nav ul li a:hover {
     color: #044A03;
 }
 
-main {
-    padding: 5px;
-    margin-top: 0px;
-}
 /*estilo seções*/
 section {
     margin: 5px 0;
@@ -311,11 +272,6 @@ footer .social-media a{
         font-size: 1rem;
     }
 
-        
-    main {
-        padding: 25px;
-        margin-top: 0px;
-    }
     header {
         height: 60px;
         padding: 8px 15px;
@@ -427,19 +383,6 @@ footer .social-media a{
         flex-direction: column;
     }
 
-    .prev, .next {
-        display: none;
-    }
-
-    
-    .prev {
-        left: 5px;
-    }
-    
-    .next {
-        right: 5px;
-    }
-            
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -579,12 +522,7 @@ footer .social-media a{
         margin: 0;
         padding: 0;
     }
-
-    main {
-        padding: 20px;
-        margin-top: 0;
-    }
-
+    
     header {
         height: 60px;
         padding: 8px 10px;

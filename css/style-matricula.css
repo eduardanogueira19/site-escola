@@ -41,19 +41,17 @@ body::before {
 
 .wrapper {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 1px;
     width: 100%;
-    height:100%;
-    padding:15px;
+    padding: 15px;
 }
 
-.container {
-    margin-top:4%;
-    flex: 1; 
+.container, .galeria-container {
+    flex: 1;
     max-width: 50%;
-    padding: 4px;
+    padding: 10px;
     background: #f4f4f4;
     border-radius: 5px;
 }
@@ -61,10 +59,6 @@ body::before {
 .galeria-container {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
-    padding: 5px;
-    background: #f4f4f4;
-    border-radius: 5px;
 }
 
 .galeria-container img {
@@ -72,9 +66,8 @@ body::before {
     height: auto;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 10px; /* Espaço entre as imagens */
+    margin-bottom: 10px;
 }
-
 
 label {
     display: block;
@@ -572,6 +565,9 @@ footer .social-media a{
     .nav-list.active {
         display: flex;
     }
+
+    
+
     footer {
         padding: 10px;
         flex-direction: column;
@@ -692,6 +688,20 @@ footer .social-media a{
         flex-direction: column;
     }
     
+    .wrapper {
+        padding: 10px;
+    }
+
+    .container, .galeria-container {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .galeria-container img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
     footer {
         padding: 10px;
         flex-direction: column; 

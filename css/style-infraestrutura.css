@@ -233,7 +233,6 @@ section {
     padding: 45px 0;
     background-color: #F4F4F4;
 }
-
 /* Estilo do rodapé */
 footer {
     background-color: #333;
@@ -535,8 +534,25 @@ footer .social-media a{
     }
     
 
+    footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+        font-size: 14px;
+    }
     .footer-section {
         font-size:12px;
+        margin: 10px 0;
+    }
+    .footer-section h2 {
+        font-size: 1.5rem;
+    }
+    .footer-bottom {
+        margin-top: 10px;
     }
     
     footer .social-media a{
@@ -638,13 +654,26 @@ footer .social-media a{
     }
 
     footer {
-        padding: 0px 0px;
-        flex-wrap: wrap;
+        padding: 10px;
+        flex-direction: column; 
     }
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%; 
+        font-size: 12px; 
+    }
     .footer-section {
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 10px 0;
+    }
+    .footer-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-section ul li {
+        margin: 3px 0; 
     }
 
     footer .social-media {

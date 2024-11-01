@@ -1008,6 +1008,29 @@ footer .social-media a{
     .prev, .next {
         display: none;
     }
+    section{
+        padding: 30px;
+    }
+    
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        transition: background-color 0.3s ease, transform 0.8s ease;
+    }
+
+    .espaco-carrossel img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .espaco-carrossel, .outer-container, .image-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
 
     footer {
         padding: 10px;
@@ -1046,25 +1069,5 @@ footer .social-media a{
     .direitos {
         font-size: 11px;
     }
-    section{
-        padding: 30px;
-    }
-    .espaco-carrossel, .outer-container, .image-container {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; 
-    }
-
-    .image-container {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        transition: background-color 0.3s ease, transform 0.8s ease;
-    }
-
-    .espaco-carrossel img {
-        width: 100%;
-        height: auto;
-    }
+    
 }

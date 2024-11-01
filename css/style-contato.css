@@ -555,9 +555,25 @@ footer .social-media a{
         display: flex;
     }
     
-
+    footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+        font-size: 14px;
+    }
     .footer-section {
         font-size:12px;
+        margin: 10px 0;
+    }
+    .footer-section h2 {
+        font-size: 1.5rem;
+    }
+    .footer-bottom {
+        margin-top: 10px;
     }
     
     footer .social-media a{
@@ -654,19 +670,35 @@ footer .social-media a{
     .visit-button:hover {
         background-color: #036602;
     }
+    section{
+        padding: 30px;
+    }
 
     nav ul {
         flex-direction: column;
     }
 
     footer {
-        padding: 0px 0px;
-        flex-wrap: wrap;
+        padding: 10px;
+        flex-direction: column; 
     }
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%; 
+        font-size: 12px; 
+    }
     .footer-section {
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 10px 0;
+    }
+    .footer-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-section ul li {
+        margin: 3px 0; 
     }
 
     footer .social-media {
@@ -683,25 +715,5 @@ footer .social-media a{
     .direitos {
         font-size: 11px;
     }
-    section{
-        padding: 30px;
-    }
-    .espaco-carrossel, .outer-container, .image-container {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; 
-    }
-
-    .image-container {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        transition: background-color 0.3s ease, transform 0.8s ease;
-    }
-
-    .espaco-carrossel img {
-        width: 100%;
-        height: auto;
-    }
+    
 }

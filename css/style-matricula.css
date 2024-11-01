@@ -1,8 +1,7 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 html {
@@ -14,7 +13,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: white;
     text-align: center;
 }
 
@@ -34,50 +33,85 @@ header {
     padding: 8px 20px;
 }
 
-
 body::before {
     content: "";
     display: block;
-    height: 60px;
+    height: 60px; 
 }
 
-/* Estilo imagem abaixo do header */
-.capa {
-    position: relative;
+.wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 1px;
     width: 100%;
-    max-width: 100%;
-    margin: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height:100%;
+    padding:15px;
+}
+
+.container {
+    flex: 1; 
+    max-width: 50%;
+    padding: 4px;
+    background: #f4f4f4;
     border-radius: 5px;
 }
 
+.galeria-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
 
-.slides img{
+.galeria-container img {
     width: 100%;
-    display: none;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px; /* Espaço entre as imagens */
 }
 
-.slides img.active{
+
+label {
     display: block;
+    margin: 5px 5px 5px;
+    text-align: left;
+    font-size: 1rem;
+    color:#888;
 }
 
-button.antes, button.depois {
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    color: #036602;
+input, select {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px; /* Aumenta a altura do campo */
+    font-size: 0.8rem; /* Tamanho do texto dentro do campo */
+    color:#888;
+}
+
+/* Estiliza o placeholder */
+input::placeholder {
+    font-size: 0.9rem; /* Aumenta o tamanho do texto do placeholder */
+    color: #888; /* Cor do placeholder */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #044A03;
     border: none;
-    padding: 20px;
+    color: white;
+    border-radius: 3px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-button.antes{
-    left: 0;
-}
-
-button.depois{
-    right: 0;
+button:hover {
+    background: #036602;
 }
 
 /*Menu hamburguer*/
@@ -103,7 +137,7 @@ button.depois{
     transition: background-color 0.3s;
     display: inline-block;
     margin-left: auto;
-    top: 15%; 
+    top: 50%; 
     transform: translateY(-50%);
     right: 0;
 }
@@ -117,8 +151,8 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin: 0 0 10px 0;
-    font-size:2rem;
-    text-align: left;
+    font-size:1.5rem;
+    text-align: center;
     color:#044A03;
 }
 
@@ -237,194 +271,15 @@ nav ul li a:hover {
     color: #044A03;
 }
 
-main {
-    padding: 5px;
-    margin-top: 0px;
-}
 /*estilo seções*/
 section {
-    margin: 5px 0;
-    padding: 45px 0;
+    margin: 0;
+    padding: 0;
     background-color: #F4F4F4;
 }
 
-/*Estilo pilares*/
-.espaco-pilares{
-    background-color: f4f4f4;
-    display: flex;
-    align-items: center;
-}
 
-.carousel-container {
-    width: 100%;
-    max-width:100%;
-    margin: 20px auto;
-    overflow: hidden;
-    position: relative;
-}
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
-}
-
-.carousel-item {
-    flex: 1 0 32.3%;
-    margin-right: 15px;
-    position: relative;
-    text-align: center;
-    background-color: #f4f4f4;
-    border-radius: 15px;
-}
-
-/* Ajustar o tamanho das imagens para ocupar toda a largura */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Efeito de interatividade nas imagens */
-.carousel-item:hover img {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Setas de navegação */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: white;
-    border: none;
-    padding: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 5px;
-}
-
-.next {
-    right: 5px;
-}
-
-/* Alinhamento em "escadinha" */
-a:nth-child(1) {
-    transform: translateY(0px);
-}
-
-a:nth-child(2) {
-    transform: translateY(60px);
-}
-
-a:nth-child(3) {
-    transform: translateY(120px);
-}
-
-/* Estilo do container do carrossel */       
-.espaco-carrossel {
-    background-color: #F4F4F4;
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
-.outer-container {
-    background-color: #f4f4f4;
-    width: 380px;
-    padding: 20px;
-    border-radius: 0px;
-    transition: background-color 0.5s ease;
-    text-align: center;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 530px;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.8s ease; 
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: border-radius 0.8s ease; 
-}
-
-.plus-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #008000;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
-}
-
-.outer-container:hover {
-    background-color: #008000;
-}
-
-.outer-container:hover .plus-icon {
-    background-color: #80ff80;
-    color: #006600;
-    border: 2px solid #006600;
-}
-
-.outer-container:hover .image-container img {
-    border-radius: 0px; 
-}
-.outer-container:hover h3 {
-    color: white;
-}
-
-.outer-container:hover .plus-icon {
-    background-color: #80ff80;
-    color: #006600;
-    border: 2px solid #006600;
-}
-
-.outer-container:hover .image-container img {
-    border-radius: 0px;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/*Estilo mapa*/
-.mapa {
-    text-align: center;
-    border: 3px solid green;
-    border-radius: 15px;
-    max-width: 600px;
-    height: 400px;
-}
-
-.mapa iframe {
-    width: 100%;
-    border-radius: 10px;
-    max-width: 600px;
-    height: 395px;
-}
 
 
 /* Estilo do rodapé */
@@ -503,11 +358,6 @@ footer .social-media a{
         font-size: 1rem;
     }
 
-        
-    main {
-        padding: 25px;
-        margin-top: 0px;
-    }
     header {
         height: 60px;
         padding: 8px 15px;
@@ -618,45 +468,6 @@ footer .social-media a{
     nav ul {
         flex-direction: column;
     }
-
-    
-    .carousel-container {
-        width: 100%;
-        max-width:100%;
-        margin: 20px auto;
-        overflow: hidden;
-        position: relative;
-        overflow-x: scroll; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
-    }
-    
-    .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        will-change: transform;
-    }
-
-    .carousel-item {
-        flex: 0 0 50%;
-        margin-right: 15px;
-        position: relative;
-        text-align: center;
-        background-color: #f4f4f4;
-        border-radius: 15px;
-    }
-
-    .prev, .next {
-        display: none;
-    }
-
-    
-    .prev {
-        left: 5px;
-    }
-    
-    .next {
-        right: 5px;
-    }
             
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -747,50 +558,6 @@ footer .social-media a{
     section {
         padding: 25px;
         margin: 5px 0;
-    }
-
-    .espaco-carrossel {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2%;
-    }
-    
-    .outer-container {
-        width: 100%;
-        padding: 10px;
-        flex: 0 0 100%; 
-        max-width: none;
-    }
-    
-    .image-container {
-        position: relative;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        transition: background-color 0.3s ease, transform 0.8s ease; 
-    }
-
-    a:nth-child(1) {
-        transform: translateY(0px);
-    }
-    
-    a:nth-child(2) {
-        transform: translateY(0px);
-    }
-    
-    a:nth-child(3) {
-        transform: translateY(0px);
-    }
-        
-    .plus-icon {
-        top: 5px;
-        right: 5px;
-        width: 15px;
-        height: 15px;
-        font-size: 10px;
     }
              
     .nav-list {
@@ -923,115 +690,7 @@ footer .social-media a{
     nav ul {
         flex-direction: column;
     }
-    /* Seção Pedagógico */
-    .espaco-carrossel {
-        height: auto;
-        display: flex;
-        justify-content: flex-start;  /* Alinha os itens no início */
-        align-items: center;
-        width: 100%;
-        max-width: 100%;
-        margin: 20px auto;
-        overflow: hidden;
-        position: relative;
-        overflow-x: auto; /* Permite a rolagem horizontal */
-        padding: 10px;
-        flex-wrap: wrap;
-    }
     
-    /* Cada item do carrossel */
-    .outer-container {
-        margin-right: 15px;
-        position: relative;
-        text-align: center;
-    }
-    
-    /* Contêiner da imagem */
-    .image-container {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0; /* Impede que os itens encolham */
-        padding: 30px;
-        transition: background-color 0.3s ease, transform 0.8s ease;
-    }
-    
-    /* Ícone do mais */
-    .plus-icon {
-        top: 5px;
-        right: 5px;
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-    }
-    
-
-    a:nth-child(1) {
-        transform: translateY(0px);
-    }
-    
-    a:nth-child(2) {
-        transform: translateY(0px);
-    }
-    
-    a:nth-child(3) {
-        transform: translateY(0px);
-    }
-    
-    
-
-    /* Carrossel de imagens */
-    .carousel-container {
-        width: 100%;
-        max-width:100%;
-        margin: 20px auto;
-        overflow: hidden;
-        position: relative;
-        overflow-x: scroll; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
-    }
-    
-    .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        will-change: transform;
-    }
-
-    .carousel-item {
-        flex: 1 0 90%;
-        margin-right: 15px;
-        position: relative;
-        text-align: center;
-        background-color: #f4f4f4;
-        border-radius: 15px;
-    }
-
-    .prev, .next {
-        display: none;
-    }
-    section{
-        padding: 30px;
-    }
-    
-
-    .image-container {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        transition: background-color 0.3s ease, transform 0.8s ease;
-    }
-
-    .espaco-carrossel img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .espaco-carrossel, .outer-container, .image-container {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; 
-    }
-
     footer {
         padding: 10px;
         flex-direction: column; 

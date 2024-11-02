@@ -211,6 +211,8 @@ img {
 }
 
 /* Estilo para lista de navegação */
+
+/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -388,6 +390,9 @@ footer .social-media a{
         height: 30px;
     }
         
+    .nav-item {
+        display: none;
+    }
     /*Menu hamburguer*/
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
@@ -424,6 +429,9 @@ footer .social-media a{
         text-align: center;
         padding-bottom: 1rem;
     }
+    .mobile-menu.open {
+        display: block; /* Torna o menu visível */
+    }
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -434,6 +442,15 @@ footer .social-media a{
     }
     .mobile-menu .visite-button button {
         width: 100%;
+    }
+
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+    
+    .mobile-menu a:visited {
+        color: inherit; /* Garante que a cor não mude após ser clicado */
     }
 
     .visit-button {
@@ -458,7 +475,6 @@ footer .social-media a{
     .visit-button:hover {
         background-color: #036602;
     }
-
 
     nav ul {
         flex-direction: column;
@@ -663,13 +679,17 @@ footer .social-media a{
 
     /* Menu hambúrguer */
     .mobile-menu-icon {
+        width: 45px;
+        height: 45px;
         position: absolute;
-        top: 1%;
+        top: 10%;
+        transform: translateY(-10);
         right: 3%;
         display: block;
         background-color: rgba(0, 0, 0, 0.1);
         padding: 0.1px;
         border-radius: 25%;
+        font-size: 10px;
     }
 
     .mobile-menu {
@@ -679,19 +699,22 @@ footer .social-media a{
         padding: 8px;
         display: none;
         margin-top: 50%;
+        gap: 10px;
     }
 
     .mobile-menu a {
         color: inherit; /* Para manter a cor herdada */
         text-decoration: none; /* Remove a linha embaixo dos links */
     }
-    
+
     .mobile-menu a:visited {
         color: inherit; /* Garante que a cor não mude após ser clicado */
     }
 
     .visit-button {
-        margin: 0 auto;
+        font-size: 14px;
+        margin: 0 ;
+        gap: 3px;
     }
 
     .visit-button button {
@@ -699,6 +722,8 @@ footer .social-media a{
         border-radius: 5px;
         background-color: #044A03;
         color: white;
+        height: 1px;
+        gap: 3px;
     }
 
     .visit-button:hover {
@@ -758,6 +783,10 @@ footer .social-media a{
     .contato,
     .direitos {
         font-size: 11px;
+    }
+
+    section{
+        padding: 30px;
     }
     
 }

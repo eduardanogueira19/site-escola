@@ -885,8 +885,8 @@ footer .social-media a{
     }
     
     .nav-logo img {
-        width: 65px; 
-        height: 65px;
+        width: 75px; 
+        height: 75px;
         border-radius: 0; 
     }
 
@@ -897,7 +897,7 @@ footer .social-media a{
         right: 3%;
         display: block;
         background-color: rgba(0, 0, 0, 0.1);
-        padding: 0.5px;
+        padding: 0.125px;
         border-radius: 25%;
     }
 

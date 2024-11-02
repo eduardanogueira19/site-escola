@@ -647,25 +647,28 @@ footer .social-media a{
         font-size: 0.9rem;
     }
 
+   
     .nav-logo {
         position: absolute;
-        left: 10px;
-        top: 15%;
+        left: 20px;
+        top:20%;
+        transform: translateY(-20%);
     }
-
+    
     .nav-logo img {
-        width: 50px;
-        height: 50px;
+        width: 65px; 
+        height: 65px;
+        border-radius: 0; 
     }
 
     /* Menu hambúrguer */
     .mobile-menu-icon {
         position: absolute;
-        top: 10%;
+        top: 1%;
         right: 3%;
         display: block;
         background-color: rgba(0, 0, 0, 0.1);
-        padding: 0.5px;
+        padding: 0.1px;
         border-radius: 25%;
     }
 
@@ -676,6 +679,15 @@ footer .social-media a{
         padding: 8px;
         display: none;
         margin-top: 50%;
+    }
+
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+    
+    .mobile-menu a:visited {
+        color: inherit; /* Garante que a cor não mude após ser clicado */
     }
 
     .visit-button {
@@ -696,7 +708,6 @@ footer .social-media a{
     nav ul {
         flex-direction: column;
     }
-    
     .wrapper {
         flex-direction: column;
         padding: 10px;

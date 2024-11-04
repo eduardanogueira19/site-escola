@@ -34,11 +34,10 @@ header {
     padding: 8px 20px;
 }
 
-/* Garantir que o conteúdo abaixo do header não fique escondido */
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
+    height: 60px;
 }
 
 /* Estilo imagem abaixo do header */
@@ -47,14 +46,12 @@ body::before {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    
-    border-radius: 5px;
 }
 .galeria-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
-    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding: 20px;
 }
 
@@ -98,6 +95,45 @@ body::before {
 
 .visit-button:hover {
     background-color: #036602;
+}
+
+
+.submenu-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 110vw; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+}
+
+.submenu-list li {
+    padding: 10px;
+}
+
+/* Link do submenu */
+.submenu-list li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.submenu.open .submenu-list {
+    display: flex;
+    width: auto;
 }
 
 /*Estilo das escritas*/        
@@ -177,7 +213,7 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 5px;
+    gap: 3px;
 }
 
 .nav-list li {
@@ -188,7 +224,7 @@ img {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
     right: 50px;
     gap: 1px;

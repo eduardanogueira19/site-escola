@@ -25,6 +25,14 @@
                     <li class="nav-item"><a href="../index.html" class="nav-link" rel="prev">Home</a></li>
                     <li class="nav-item"><a href="sobre-nos.html" rel="next">Saiba mais</a></li>
                     <li class="nav-item"><a href="infraestrutura.html" rel="next">Infraestrutura</a></li>
+                    <li class="nav-item submenu">
+                        <a href="#" class="nav-link submenu-toggle">Ensino</a>
+                        <ul class="submenu-list">
+                            <li><a href="educacao-infantil.html">Educação Infantil</a></li>
+                            <li><a href="ensino-fundamental1.html">Fundamental I</a></li>
+                            <li><a href="ensino-fundamental2.html">Fundamental II</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="matricula.html" rel="next">Matricula-se</a></li>
                     <li class="nav-item"><a href="contato.html" rel="next">Contato</a></li>
                     <li> 
@@ -55,7 +63,7 @@
     </header>
 
     <div class="capa">
-        <img src="../imagens/educacao-infantil.png" alt="Imagem de capa Educação Infantil" />
+        <img src="../imagens/capa-educacao-infantil.png" alt="Imagem de capa Educação Infantil" />
     </div>
 
     <main>
@@ -126,6 +134,23 @@
         </div>
 
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submenuToggle = document.querySelector('.submenu-toggle');
+            const submenuList = submenuToggle.nextElementSibling;
+
+            submenuList.style.display = 'none';
+
+            submenuToggle.addEventListener('click', function(event) {
+                event.preventDefault();
+                if (submenuList.style.display === 'none') {
+                    submenuList.style.display = 'flex'; 
+                } else {
+                    submenuList.style.display = 'none';
+                }
+            });
+        });
+    </script>
     <script src="../js/script-paginas.js"></script>
     </body>
 </html>

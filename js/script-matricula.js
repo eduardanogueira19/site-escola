@@ -40,3 +40,21 @@ function menuShow() {
         document.querySelector('.icon').src = "../imagens/close_white_36dp.svg";
     }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const submenuToggle = document.querySelector('.submenu-toggle');
+    const submenuList = submenuToggle.nextElementSibling;
+
+    submenuList.style.display = 'none';
+
+    submenuToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (submenuList.style.display === 'none') {
+            submenuList.style.display = 'flex'; 
+        } else {
+            submenuList.style.display = 'none';
+        }
+    });
+});

@@ -47,17 +47,33 @@ body::before {
     max-width: 100%;
     margin: 0;
 }
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+    width: 100%;
+    padding: 15px;
+}
+
+.container, .galeria-container {
+    flex: 1;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 1px;
+}
+
 .galeria-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
+    gap: 20px; /* Espaçamento entre as imagens */
     padding: 20px;
 }
 
 .galeria-container img {
     width: 300px;  /* Mantém as imagens no mesmo tamanho */
-    height: 400px; /* Imagens quadradas */
+    height: 350px; /* Imagens quadradas */
     object-fit: cover; /* Garante que a imagem preencha o quadrado */
     border: 5px solid #036602; /* Cor da borda */
     border-radius: 15px; /* Bordas arredondadas */
@@ -357,16 +373,12 @@ footer .social-media a{
         padding: 8px 15px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
     h2 {
         font-size: 1.2rem; 
     }
 
     h3{
-        font-size:0.8rem;
+        font-size:2rem;
     }
 
     h4{
@@ -374,7 +386,7 @@ footer .social-media a{
     }
 
     p {
-        font-size: 0.5; 
+        font-size: 1rem; 
     }
     .nav-logo {
         position: absolute;
@@ -721,6 +733,23 @@ footer .social-media a{
 
     nav ul {
         flex-direction: column;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container, .galeria-container {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .galeria-container img {
+        width: auto;
+        height:400;
+        margin-bottom: 8px;
     }
 
     footer {

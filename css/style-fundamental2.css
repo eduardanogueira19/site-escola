@@ -49,6 +49,22 @@ body::before {
     margin: 0;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+    width: 100%;
+    padding: 15px;
+}
+
+.container, .galeria-container {
+    flex: 1;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 1px;
+}
+
 .galeria-container {
     display: flex;
     justify-content: center;
@@ -59,14 +75,13 @@ body::before {
 
 .galeria-container img {
     width: 300px;  /* Mantém as imagens no mesmo tamanho */
-    height: 400px; /* Imagens quadradas */
+    height: 350px; /* Imagens quadradas */
     object-fit: cover; /* Garante que a imagem preencha o quadrado */
     border: 5px solid #036602; /* Cor da borda */
     border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra criativa ao redor das imagens */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
 }
-
 /*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
@@ -173,13 +188,14 @@ h4{
     margin: 0 0 10px 0;
     color:white;
     margin-top: 10px;
+    font-size: 1rem;
 }
 
 p{
     font-family: 'Poppins', sans-serif;
     text-align: left;
     color:#044A03;
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-top: 5px;
     color: black;
     font-weight: 300;
@@ -359,16 +375,12 @@ footer .social-media a{
         padding: 8px 15px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
     h2 {
         font-size: 1.2rem; 
     }
 
     h3{
-        font-size:0.8rem;
+        font-size:2rem;
     }
 
     h4{
@@ -376,8 +388,26 @@ footer .social-media a{
     }
 
     p {
-        font-size: 0.5; 
+        font-size: 10px; 
     }
+
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container, .galeria-container {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .galeria-container img {
+        width: auto;
+        height:400;
+        margin-bottom: 8px;
+    }
+
     .nav-logo {
         position: absolute;
         left: 20px;

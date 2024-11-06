@@ -1129,8 +1129,8 @@ footer .social-media a{
     }
     
     .galeria-container img {
-        width: 150px;  
-        height: 150px; 
+        width: 200px;  
+        height: 200px; 
         object-fit: cover; 
         border: 0.5px solid #036602; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);

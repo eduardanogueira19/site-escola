@@ -691,7 +691,8 @@ footer .social-media a{
         border-radius: 10px;
         padding: 8px;
         display: none;
-        margin-top: 50%;
+        margin-top: 70%;
+        gap: 10px;
     }
 
     .mobile-menu a {

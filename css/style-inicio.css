@@ -285,12 +285,12 @@ main {
 section {
     margin: 5px 0;
     padding: 45px 0;
-    background-color: #F4F4F4;
+    background: transparent;
 }
 
 /*Estilo pilares*/
 .espaco-pilares{
-    background-color: f4f4f4;
+    background: transparent;
     display: flex;
     align-items: center;
 }
@@ -314,7 +314,7 @@ section {
     margin-right: 15px;
     position: relative;
     text-align: center;
-    background-color: #f4f4f4;
+    background: transparent;
     border-radius: 15px;
 }
 
@@ -368,7 +368,7 @@ a:nth-child(3) {
 
 /* Estilo do container do carrossel */       
 .espaco-carrossel {
-    background-color: #F4F4F4;
+    background: transparent;
     width: 60%;
     height: auto;
     display: flex;
@@ -378,7 +378,7 @@ a:nth-child(3) {
 }
 
 .outer-container {
-    background-color: #f4f4f4;
+    background: transparent;
     width: 380px;
     padding: 20px;
     border-radius: 0px;
@@ -450,20 +450,39 @@ a {
     color: inherit;
 }
 
-/*Estilo mapa*/
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 5px;
+    padding: 5px;
+    line-height: 0; /* Remove o espaçamento vertical adicional */
+}
+
+.galeria-container img {
+    width: 350px;  
+    height: 350px; 
+    object-fit: cover; 
+    border: 0.5px solid #036602; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
+}
+
+/* Centralizar o mapa */
 .mapa {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     border: 3px solid green;
     border-radius: 15px;
-    max-width: 600px;
-    height: 400px;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto; /* Centraliza o mapa horizontalmente */
 }
 
 .mapa iframe {
     width: 100%;
     border-radius: 10px;
-    max-width: 600px;
-    height: 395px;
+    height: 100%;
 }
 
 
@@ -846,6 +865,27 @@ footer .social-media a{
     .nav-list.active {
         display: flex;
     }
+
+    .galeria-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 2px;
+        line-height: 0; /* Remove o espaçamento vertical adicional */
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .galeria-container img {
+        width: 170px;  
+        height: 170px; 
+        object-fit: cover; 
+        border: 0.5px solid #036602; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
+    }
+    
     footer {
         padding: 10px;
         flex-direction: column;
@@ -1053,7 +1093,7 @@ footer .social-media a{
         display: none;
     }
     section{
-        padding: 30px;
+        padding: 20px;
     }
     
 
@@ -1074,6 +1114,27 @@ footer .social-media a{
         margin: 0;
         padding: 0;
         overflow-x: hidden; 
+    }
+
+
+    .galeria-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 2px;
+        line-height: 0; /* Remove o espaçamento vertical adicional */
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .galeria-container img {
+        width: 100px;  
+        height: 100px; 
+        object-fit: cover; 
+        border: 0.5px solid #036602; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
     }
 
     footer {

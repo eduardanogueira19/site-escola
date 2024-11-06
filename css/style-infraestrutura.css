@@ -509,6 +509,7 @@ footer .social-media a{
         cursor: pointer;
     }
     .mobile-menu ul {
+        text-decoration: none;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -574,6 +575,29 @@ footer .social-media a{
         display: flex;
     }
     
+    .galeria-container {
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0);
+        flex-wrap: wrap; 
+        gap: 2px;
+        line-height: 0; 
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .galeria-container img {
+        width: 220px;  
+        height: 220px; 
+        object-fit: cover; 
+        border: 0.5px solid #036602; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0.4px;
+    }
 
     footer {
         padding: 10px;
@@ -608,8 +632,8 @@ footer .social-media a{
 
 @media screen and (max-width: 480px) {
     html, body {
-        font-size: 14px;
-        overflow-x: hidden;
+        font-size: 14px; /* Tamanho ajustado para telas pequenas */
+        overflow-x: hidden; /* Evita que a página role horizontalmente */
         margin: 0;
         padding: 0;
     }
@@ -646,13 +670,15 @@ footer .social-media a{
 
     .nav-logo {
         position: absolute;
-        left: 10px;
-        top: 15%;
+        left: 20px;
+        top:20%;
+        transform: translateY(-20%);
     }
-
+    
     .nav-logo img {
-        width: 50px;
-        height: 50px;
+        width: 65px; 
+        height: 65px;
+        border-radius: 0; 
     }
 
     /* Menu hambúrguer */
@@ -662,7 +688,7 @@ footer .social-media a{
         right: 3%;
         display: block;
         background-color: rgba(0, 0, 0, 0.1);
-        padding: 0.5px;
+        padding: 0.125px;
         border-radius: 25%;
     }
 
@@ -692,6 +718,29 @@ footer .social-media a{
 
     nav ul {
         flex-direction: column;
+    }
+
+    .galeria-container {
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 2px;
+        line-height: 0; 
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .galeria-container img {
+        width: 125px;  
+        height: 125px; 
+        object-fit: cover; 
+        border: 0.5px solid #036602; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0.4px;
     }
 
     footer {

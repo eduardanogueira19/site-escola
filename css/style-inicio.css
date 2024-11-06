@@ -885,7 +885,7 @@ footer .social-media a{
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
     }
-    
+
     footer {
         padding: 10px;
         flex-direction: column;
@@ -1065,13 +1065,13 @@ footer .social-media a{
 
     /* Carrossel de imagens */
     .carousel-container {
-        width: 100%;
+        width: 50vh;
         max-width:100%;
-        margin: 20px auto;
+        margin: 20px 0;
         overflow: hidden;
         position: relative;
-        overflow-x: scroll; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
     }
     
     .carousel-inner {
@@ -1081,7 +1081,7 @@ footer .social-media a{
     }
 
     .carousel-item {
-        flex: 1 0 90%;
+        flex: 1 0 97%;
         margin-right: 15px;
         position: relative;
         text-align: center;
@@ -1118,19 +1118,22 @@ footer .social-media a{
 
 
     .galeria-container {
+        width: 50vh;
+        left: 0%;
         display: flex;
         justify-content: center;
+        transform: translateX(-10%);
         flex-wrap: wrap; 
         gap: 2px;
-        line-height: 0; /* Remove o espaçamento vertical adicional */
+        line-height: 0; 
         margin: 0;
         margin-left: 0;
         margin-right: 0;
     }
     
     .galeria-container img {
-        width: 100px;  
-        height: 100px; 
+        width: 140px;  
+        height: 140px; 
         object-fit: cover; 
         border: 0.5px solid #036602; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);

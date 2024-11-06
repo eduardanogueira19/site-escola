@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões */
+    box-sizing: border-box; 
 }
 
 html {
@@ -18,12 +18,6 @@ body {
     text-align: center;
 }
 
-body::before {
-    content: "";
-    display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
-}
-
 /* Estilo cabeçalho */
 header {
     position: fixed;
@@ -36,43 +30,33 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza verticalmente os elementos */
+    align-items: center;
     padding: 8px 20px;
 }
 
-/* Garantir que o conteúdo abaixo do header não fique escondido */
+
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
-}
-
-/* Estilo imagem abaixo do header */
-.capa {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    
-    border-radius: 5px;
+    height: 60px;
 }
 
 .galeria-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
-    gap: 20px; /* Espaçamento entre as imagens */
-    padding: 20px;
+    flex-wrap: wrap; 
+    gap: 5px;
+    padding: 5px;
+    line-height: 0; /* Remove o espaçamento vertical adicional */
 }
 
 .galeria-container img {
-    width: 300px;  /* Mantém as imagens no mesmo tamanho */
-    height: 400px; /* Imagens quadradas */
-    object-fit: cover; /* Garante que a imagem preencha o quadrado */
-    border: 5px solid #036602; /* Cor da borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra criativa ao redor das imagens */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover; 
+    border: 0.5px solid #036602; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
 }
 
 /*Menu hamburguer*/
@@ -213,7 +197,6 @@ img {
     border-radius: 0; 
 }
 
-/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -277,7 +260,19 @@ main {
 section {
     margin: 5px 0;
     padding: 45px 0;
-    background-color: #F4F4F4;
+    background: transparent
+}
+.left-align {
+    text-align: left;
+    list-style-type: disc; /* Garante que os marcadores estejam visíveis */
+    list-style-position: outside; /* Os marcadores ficam fora da área de texto */
+    padding-left: 20px; /* Adiciona um pequeno espaço para os marcadores */
+    margin: 0; /* Remove margens padrão */
+}
+
+.left-align li {
+    text-align: left;
+    color: white;
 }
 /* Estilo do rodapé */
 footer {

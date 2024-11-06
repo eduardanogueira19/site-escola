@@ -1122,7 +1122,7 @@ footer .social-media a{
         left: 0%;
         display: flex;
         justify-content: center;
-        transform: translateX(0%);
+        align-items: center;
         flex-wrap: wrap; 
         gap: 2px;
         line-height: 0; 
@@ -1132,12 +1132,12 @@ footer .social-media a{
     }
     
     .galeria-container img {
-        width: 179px;  
-        height: 179px; 
+        width: 125px;  
+        height: 125px; 
         object-fit: cover; 
         border: 0.5px solid #036602; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
+        margin: 0.4px;
     }
 
     footer {

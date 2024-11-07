@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões */
+    box-sizing: border-box;
 }
 
 html {
@@ -20,30 +20,28 @@ body {
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
+    height: 60px;
 }
 
-/* Estilo cabeçalho */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Ajuste da altura */
+    height: 60px; 
     background-color: #F4F4F4;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza verticalmente os elementos */
+    align-items: center;
     padding: 8px 20px;
 }
 
-/* Garantir que o conteúdo abaixo do header não fique escondido */
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
+    height: 60px;
 }
 
 main {
@@ -83,7 +81,6 @@ main {
     color: #246b29;
 }
 
-/*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
 }
@@ -92,7 +89,6 @@ main {
     display: none;
 }
 
-/* Estilo do botão de agendar visita */
 .visit-button {
     background-color: #044A03;
     color: white;
@@ -115,7 +111,6 @@ main {
     background-color: #036602;
 }
 
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -137,7 +132,6 @@ main {
     padding: 10px;
 }
 
-/* Link do submenu */
 .submenu-list li a {
     text-decoration: none;
     color: #333;
@@ -153,8 +147,7 @@ main {
     display: flex;
     width: auto;
 }
-
-/*Estilo das escritas*/        
+   
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -201,8 +194,6 @@ p{
     font-weight: 300;
 }
 
-
-/* Estilo do ícone */
 .nav-logo {
     position: absolute;
     left: 20px;
@@ -216,7 +207,6 @@ p{
     border-radius: 0; 
 }
 
-/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -276,7 +266,7 @@ main {
     padding: 5px;
     margin-top: 0px;
 }
-/*estilo seções*/
+
 section {
     margin: 5px 0;
     padding: 15px 0;
@@ -288,7 +278,6 @@ a {
     color: inherit;
 }
 
-/* Centralizar o mapa */
 .mapa {
     display: flex;
     justify-content: center;
@@ -305,8 +294,6 @@ a {
     height: 100%;
 }
 
-
-/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -370,9 +357,6 @@ footer .social-media a{
     font-size: 18px;
 }
 
-
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
@@ -381,8 +365,7 @@ footer .social-media a{
     body{
         font-size: 1rem;
     }
-
-        
+   
     main {
         padding: 25px;
         margin-top: 0px;
@@ -411,6 +394,7 @@ footer .social-media a{
     p {
         font-size: 0.5; 
     }
+
     .nav-logo {
         position: absolute;
         left: 20px;
@@ -432,7 +416,7 @@ footer .social-media a{
     .nav-item {
         display: none;
     }
-    /*Menu hamburguer*/
+
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
@@ -457,29 +441,32 @@ footer .social-media a{
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu.open {
-        display: block; /* Torna o menu visível */
+        display: block; 
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
+
     .mobile-menu .visite-button {
         display: block;
         padding: 1rem 2rem;
-    }
-    .mobile-menu .visite-button {
         width: 100%;
     }
 
@@ -488,7 +475,6 @@ footer .social-media a{
         margin: 0 auto;
         order: 2;
     }
-
 
     .visit-button:hover {
         background-color: #036602;
@@ -499,7 +485,6 @@ footer .social-media a{
         height: 65px;
     }
 
-    /* Ajuste de padding e margin para seções */
     section {
         padding: 25px;
         margin: 5px 0;
@@ -521,19 +506,23 @@ footer .social-media a{
         padding: 10px;
         flex-direction: column;
     }
+
     .footer-content {
         flex-direction: column; 
         align-items: center;
         width: 100%; 
         font-size: 14px;
     }
+
     .footer-section {
         font-size:12px;
         margin: 10px 0;
     }
+
     .footer-section h2 {
         font-size: 1.5rem;
     }
+
     .footer-bottom {
         margin-top: 10px;
     }
@@ -549,10 +538,9 @@ footer .social-media a{
 }
 
 @media screen and (max-width: 480px) {
-    /* Impedir rolagem horizontal no corpo da página */
     html, body {
-        font-size: 14px; /* Tamanho ajustado para telas pequenas */
-        overflow-x: hidden; /* Evita que a página role horizontalmente */
+        font-size: 14px; 
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -598,7 +586,6 @@ footer .social-media a{
         height: 60px;
     }
 
-    /* Menu hambúrguer */
     .mobile-menu-icon {
         position: absolute;
         top: 10%;
@@ -633,6 +620,7 @@ footer .social-media a{
     .visit-button:hover {
         background-color: #036602;
     }
+
     section{
         padding: 30px;
     }
@@ -652,10 +640,12 @@ footer .social-media a{
         width: 100%; 
         font-size: 12px; 
     }
+
     .footer-section {
         font-size: 12px;
         margin-top: 10px 0;
     }
+    
     .footer-section h2 {
         font-size: 1.2rem;
     }

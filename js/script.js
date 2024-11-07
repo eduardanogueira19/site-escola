@@ -16,12 +16,11 @@ function mudarSlide(direcao){
 //trocar slide automaticamente a cada 7 segundos
 setInterval(() =>
     mudarSlide(1), 7000);
-
 //iniciar com o primeiro slide ativo
 showSlides(currentSlide);
 
 
-//Mover carrossel
+//Move carrossel
 let currentCarousel = 0;
     function moveCarousel(direction) {
         const carousel = document.querySelector('.carousel-inner');
@@ -40,7 +39,6 @@ let currentCarousel = 0;
             carousel.style.transform = `translateX(${offset}px)`;
         }
 
-
 // Função abre e fecha menu em telas menores
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
@@ -53,6 +51,7 @@ function menuShow() {
     }
 }
 
+//função abre e fecha submenu ensino
 document.addEventListener('DOMContentLoaded', function() {
     const submenuToggle = document.querySelector('.submenu-toggle');
     const submenuList = submenuToggle.nextElementSibling;

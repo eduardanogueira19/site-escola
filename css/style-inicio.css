@@ -1,4 +1,3 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +17,12 @@ body {
     text-align: center;
 }
 
-/* Estilo cabeçalho */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Ajuste da altura */
+    height: 60px;
     background-color: #F4F4F4;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -34,14 +32,12 @@ header {
     padding: 8px 20px;
 }
 
-
 body::before {
     content: "";
     display: block;
     height: 60px;
 }
 
-/* Estilo imagem abaixo do header */
 .capa {
     position: relative;
     width: 100%;
@@ -50,7 +46,6 @@ body::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-
 
 .slides img{
     width: 100%;
@@ -80,7 +75,6 @@ button.depois{
     right: 0;
 }
 
-/*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
 }
@@ -89,7 +83,6 @@ button.depois{
     display: none;
 }
 
-/* Estilo do botão de agendar visita */
 .visit-button {
     background-color: #044A03;
     color: white;
@@ -112,7 +105,6 @@ button.depois{
     background-color: #036602;
 }
 
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -134,7 +126,6 @@ button.depois{
     padding: 10px;
 }
 
-/* Link do submenu */
 .submenu-list li a {
     text-decoration: none;
     color: #333;
@@ -150,8 +141,7 @@ button.depois{
     display: flex;
     width: auto;
 }
-
-/*Estilo das escritas*/        
+        
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -196,10 +186,8 @@ p{
     margin-top: 5px;
     color: black;
     font-weight: 300;
-    padding:10px;
 }
 
-/* Garantindo que as imagens sejam responsivas */
 img {
     width: 100%;
     height: auto;
@@ -207,7 +195,6 @@ img {
     object-fit: cover; 
 }
 
-/* Estilo do ícone */
 .nav-logo {
     position: absolute;
     left: 20px;
@@ -221,7 +208,6 @@ img {
     border-radius: 0; 
 }
 
-/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -281,14 +267,13 @@ main {
     padding: 5px;
     margin-top: 0px;
 }
-/*estilo seções*/
+
 section {
     margin: 5px 0;
     padding: 45px 0;
     background: transparent;
 }
 
-/*Estilo pilares*/
 .espaco-pilares{
     background: transparent;
     display: flex;
@@ -318,7 +303,6 @@ section {
     border-radius: 15px;
 }
 
-/* Ajustar o tamanho das imagens para ocupar toda a largura */
 .carousel-item img {
     width: 100%;
     height: auto;
@@ -326,13 +310,11 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Efeito de interatividade nas imagens */
 .carousel-item:hover img {
     transform: scale(1.02);
     transition: transform 0.5s ease-in-out;
 }
 
-/* Setas de navegação */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -353,7 +335,6 @@ section {
     right: 5px;
 }
 
-/* Alinhamento em "escadinha" */
 a:nth-child(1) {
     transform: translateY(0px);
 }
@@ -365,8 +346,7 @@ a:nth-child(2) {
 a:nth-child(3) {
     transform: translateY(120px);
 }
-
-/* Estilo do container do carrossel */       
+       
 .espaco-carrossel {
     background: transparent;
     width: 60%;
@@ -432,6 +412,7 @@ a:nth-child(3) {
 .outer-container:hover .image-container img {
     border-radius: 0px; 
 }
+
 .outer-container:hover h3 {
     color: white;
 }
@@ -445,6 +426,7 @@ a:nth-child(3) {
 .outer-container:hover .image-container img {
     border-radius: 0px;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -456,7 +438,7 @@ a {
     flex-wrap: wrap; 
     gap: 5px;
     padding: 5px;
-    line-height: 0; /* Remove o espaçamento vertical adicional */
+    line-height: 0;
 }
 
 .galeria-container img {
@@ -465,8 +447,9 @@ a {
     object-fit: cover; 
     border: 0.5px solid #036602; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
+    margin: 0.4px; 
 }
+
 .instagram-link{
     display: inline-block;
     margin-top: 20px;
@@ -481,7 +464,7 @@ a {
 .instagram-link:hover{
     background-color: #008000;
 }
-/* Centralizar o mapa */
+
 .mapa {
     display: flex;
     justify-content: center;
@@ -489,7 +472,7 @@ a {
     border-radius: 15px;
     max-width: 400px;
     height: 300px;
-    margin: 0 auto; /* Centraliza o mapa horizontalmente */
+    margin: 0 auto; 
 }
 
 .mapa iframe {
@@ -498,8 +481,6 @@ a {
     height: 100%;
 }
 
-
-/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -563,8 +544,6 @@ footer .social-media a{
     font-size: 18px;
 }
 
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
@@ -573,12 +552,12 @@ footer .social-media a{
     body{
         font-size: 1rem;
     }
-
         
     main {
         padding: 25px;
         margin-top: 0px;
     }
+
     header {
         height: 60px;
         padding: 8px 15px;
@@ -603,6 +582,7 @@ footer .social-media a{
     p {
         font-size: 0.5rem; 
     }
+
     .nav-logo {
         position: absolute;
         left: 20px;
@@ -616,11 +596,9 @@ footer .social-media a{
         border-radius: 0; 
     }
 
-
     nav ul {
         flex-direction: column;
     }
-
     
     .carousel-container {
         width: 100%;
@@ -628,8 +606,8 @@ footer .social-media a{
         margin: 20px auto;
         overflow: hidden;
         position: relative;
-        overflow-x: scroll; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Alinha as imagens ao parar de rolar */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
     }
     
     .carousel-inner {
@@ -651,7 +629,6 @@ footer .social-media a{
         display: none;
     }
 
-    
     .prev {
         left: 5px;
     }
@@ -663,10 +640,11 @@ footer .social-media a{
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+    
     .nav-item {
         display: none;
     }
-    /*Menu hamburguer*/
+    
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
@@ -691,28 +669,34 @@ footer .social-media a{
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu.open {
-        display: block; /* Torna o menu visível */
+        display: block;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
+
     .mobile-menu .visite-button {
         display: block;
         padding: 1rem 2rem;
     }
+    
     .mobile-menu .visite-button button {
         width: 100%;
     }
@@ -745,7 +729,6 @@ footer .social-media a{
         height: 65px;
     }
 
-    /* Ajuste de padding e margin para seções */
     section {
         padding: 25px;
         margin: 5px 0;
@@ -812,7 +795,7 @@ footer .social-media a{
         justify-content: center;
         flex-wrap: wrap; 
         gap: 2px;
-        line-height: 0; /* Remove o espaçamento vertical adicional */
+        line-height: 0; 
         margin: 0;
         margin-left: 0;
         margin-right: 0;
@@ -824,13 +807,14 @@ footer .social-media a{
         object-fit: cover; 
         border: 0.5px solid #036602; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
+        margin: 0.4px; 
     }
 
     footer {
         padding: 10px;
         flex-direction: column;
     }
+
     .footer-content {
         flex-direction: column; 
         align-items: center;
@@ -859,10 +843,10 @@ footer .social-media a{
 }
 
 @media screen and (max-width: 480px) {
-    /* Impedir rolagem horizontal no corpo da página */
+   
     html, body {
-        font-size: 14px; /* Tamanho ajustado para telas pequenas */
-        overflow-x: hidden; /* Evita que a página role horizontalmente */
+        font-size: 14px;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -910,7 +894,6 @@ footer .social-media a{
         border-radius: 0; 
     }
 
-    /* Menu hambúrguer */
     .mobile-menu-icon {
         position: absolute;
         top: 10%;
@@ -935,7 +918,6 @@ footer .social-media a{
         margin: 0 auto;
     }
 
-
     .visit-button:hover {
         background-color: #036602;
     }
@@ -943,39 +925,35 @@ footer .social-media a{
     nav ul {
         flex-direction: column;
     }
-    /* Seção Pedagógico */
+
     .espaco-carrossel {
         height: auto;
         display: flex;
-        justify-content: flex-start;  /* Alinha os itens no início */
+        justify-content: flex-start;  
         align-items: center;
         width: 100%;
         max-width: 100%;
         margin: 20px auto;
         overflow: hidden;
         position: relative;
-        overflow-x: auto; /* Permite a rolagem horizontal */
+        overflow-x: auto; 
         padding: 10px;
         flex-wrap: wrap;
     }
     
-    /* Cada item do carrossel */
     .outer-container {
-        margin-right: 15px;
+        margin-right: 0px;
         position: relative;
         text-align: center;
     }
-    
-    /* Contêiner da imagem */
     .image-container {
         width: 100%;
         height: auto;
-        flex-shrink: 0; /* Impede que os itens encolham */
+        flex-shrink: 0; 
         padding: 30px;
         transition: background-color 0.3s ease, transform 0.8s ease;
     }
     
-    /* Ícone do mais */
     .plus-icon {
         top: 5px;
         right: 5px;
@@ -983,7 +961,6 @@ footer .social-media a{
         height: 30px;
         font-size: 20px;
     }
-    
 
     a:nth-child(1) {
         transform: translateY(0px);
@@ -996,10 +973,7 @@ footer .social-media a{
     a:nth-child(3) {
         transform: translateY(0px);
     }
-    
-    
 
-    /* Carrossel de imagens */
     .carousel-container {
         width: 50vh;
         max-width:100%;
@@ -1028,11 +1002,11 @@ footer .social-media a{
     .prev, .next {
         display: none;
     }
+
     section{
         padding: 20px;
     }
     
-
     .image-container {
         width: 100%;
         height: auto;
@@ -1051,8 +1025,7 @@ footer .social-media a{
         padding: 0;
         overflow-x: hidden; 
     }
-
-        
+    
     .instagram-link{
         font-size: 0.7rem;
         background-color: #036602;
@@ -1061,7 +1034,6 @@ footer .social-media a{
         border-radius: 10px;
         width: 33.3%;
     }
-
 
     .galeria-container {
         width: 100%;
@@ -1097,10 +1069,12 @@ footer .social-media a{
         width: 100%; 
         font-size: 12px; 
     }
+    
     .footer-section {
         font-size: 12px;
         margin-top: 10px 0;
     }
+    
     .footer-section h2 {
         font-size: 1.2rem;
     }
@@ -1122,6 +1096,9 @@ footer .social-media a{
     .contato,
     .direitos {
         font-size: 11px;
-    }
     
+    }
+    section{
+        padding: 30px;
+    }
 }

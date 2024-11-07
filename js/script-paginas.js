@@ -16,12 +16,11 @@ function mudarSlide(direcao){
 //trocar slide automaticamente a cada 7 segundos
 setInterval(() =>
     mudarSlide(1), 7000);
-
 //iniciar com o primeiro slide ativo
 showSlides(currentSlide);
 
 
-//Mover carrossel
+//Move carrossel
 let currentCarousel = 0;
     function moveCarousel(direction) {
         const carousel = document.querySelector('.carousel-inner');

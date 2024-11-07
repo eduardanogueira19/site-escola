@@ -1,8 +1,7 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que o padding e border sejam incluídos nas dimensões */
+    box-sizing: border-box;
 }
 
 html {
@@ -18,30 +17,26 @@ body {
     text-align: center;
 }
 
-/* Estilo cabeçalho */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Ajuste da altura */
+    height: 60px;
     background-color: #F4F4F4;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza verticalmente os elementos */
+    align-items: center;
     padding: 8px 20px;
 }
 
-/* Garantir que o conteúdo abaixo do header não fique escondido */
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
 }
 
-/* Estilo imagem abaixo do header */
 .capa {
     position: relative;
     width: 100%;
@@ -68,22 +63,21 @@ body::before {
 .galeria-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que as imagens quebrem de linha se a tela for pequena */
-    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding: 20px;
 }
 
 .galeria-container img {
-    width: 300px;  /* Mantém as imagens no mesmo tamanho */
-    height: 350px; /* Imagens quadradas */
-    object-fit: cover; /* Garante que a imagem preencha o quadrado */
-    border: 5px solid #036602; /* Cor da borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra criativa ao redor das imagens */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid #036602;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
 }
@@ -115,7 +109,6 @@ body::before {
     background-color: #036602;
 }
 
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -137,7 +130,6 @@ body::before {
     padding: 10px;
 }
 
-/* Link do submenu */
 .submenu-list li a {
     text-decoration: none;
     color: #333;
@@ -153,8 +145,7 @@ body::before {
     display: flex;
     width: auto;
 }
-
-/*Estilo das escritas*/        
+        
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -208,7 +199,6 @@ img {
     object-fit: cover; 
 }
 
-/* Estilo do ícone */
 .nav-logo {
     position: absolute;
     left: 20px;
@@ -222,7 +212,6 @@ img {
     border-radius: 0; 
 }
 
-/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -282,14 +271,13 @@ main {
     padding: 5px;
     margin-top: 0px;
 }
-/*estilo seções*/
+
 section {
     margin: 5px 0;
     padding: 45px 0;
     background-color: #F4F4F4;
 }
 
-/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -353,9 +341,6 @@ footer .social-media a{
     font-size: 18px;
 }
 
-
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
@@ -364,12 +349,12 @@ footer .social-media a{
     body{
         font-size: 1rem;
     }
-
         
     main {
         padding: 25px;
         margin-top: 0px;
     }
+
     header {
         height: 60px;
         padding: 8px 15px;
@@ -390,6 +375,7 @@ footer .social-media a{
     p {
         font-size: 1rem; 
     }
+
     .nav-logo {
         position: absolute;
         left: 20px;
@@ -408,7 +394,6 @@ footer .social-media a{
     .prev, .next {
         display: none;
     }
-
     
     .prev {
         left: 5px;
@@ -421,10 +406,11 @@ footer .social-media a{
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+
     .nav-item {
         display: none;
     }
-    /*Menu hamburguer*/
+
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
@@ -449,11 +435,13 @@ footer .social-media a{
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -461,27 +449,30 @@ footer .social-media a{
         padding-bottom: 1rem;
     }
     .mobile-menu.open {
-        display: block; /* Torna o menu visível */
+        display: block;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
+   
     .mobile-menu .visite-button {
         display: block;
         padding: 1rem 2rem;
     }
+   
     .mobile-menu .visite-button button {
         width: 100%;
     }
 
     .mobile-menu a {
-        color: inherit; /* Para manter a cor herdada */
-        text-decoration: none; /* Remove a linha embaixo dos links */
+        color: inherit; 
+        text-decoration: none; 
     }
     
     .mobile-menu a:visited {
-        color: inherit; /* Garante que a cor não mude após ser clicado */
+        color: inherit; 
     }
 
     .visit-button {
@@ -512,7 +503,6 @@ footer .social-media a{
         height: 65px;
     }
 
-    /* Ajuste de padding e margin para seções */
     section {
         padding: 25px;
         margin: 5px 0;
@@ -521,8 +511,7 @@ footer .social-media a{
     a:nth-child(1) {
         transform: translateY(0px);
     }
-      
-             
+                   
     .nav-list {
         display: none;
     }
@@ -535,24 +524,27 @@ footer .social-media a{
         display: flex;
     }
     
-
     footer {
         padding: 10px;
         flex-direction: column;
     }
+    
     .footer-content {
         flex-direction: column; 
         align-items: center;
         width: 100%; 
         font-size: 14px;
     }
+    
     .footer-section {
         font-size:12px;
         margin: 10px 0;
     }
+    
     .footer-section h2 {
         font-size: 1.5rem;
     }
+    
     .footer-bottom {
         margin-top: 10px;
     }
@@ -564,7 +556,6 @@ footer .social-media a{
     .contato, .direitos{
         font-size: 12px;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -616,7 +607,6 @@ footer .social-media a{
         height: 50px;
     }
 
-    /* Menu hambúrguer */
     .mobile-menu-icon {
         position: absolute;
         top: 10%;
@@ -638,12 +628,12 @@ footer .social-media a{
     }
 
     .mobile-menu a {
-        color: inherit; /* Para manter a cor herdada */
-        text-decoration: none; /* Remove a linha embaixo dos links */
+        color: inherit;
+        text-decoration: none;
     }
     
     .mobile-menu a:visited {
-        color: inherit; /* Garante que a cor não mude após ser clicado */
+        color: inherit; 
     }
 
     .visit-button {
@@ -694,10 +684,12 @@ footer .social-media a{
         width: 100%; 
         font-size: 12px; 
     }
+
     .footer-section {
         font-size: 12px;
         margin-top: 10px 0;
     }
+    
     .footer-section h2 {
         font-size: 1.2rem;
     }

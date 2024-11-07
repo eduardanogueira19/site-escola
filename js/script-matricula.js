@@ -1,3 +1,4 @@
+//Função para enviar informações para o whatsapp
 function enviarParaWhatsApp() {
     const nome_responsavel = document.getElementById('nome_responsavel').value;
     const email = document.getElementById('email').value;
@@ -6,13 +7,12 @@ function enviarParaWhatsApp() {
     const data_nascimento = document.getElementById('data_nascimento').value;
     const curso = document.getElementById('curso').value;
 
-    // Formatar data para dd/mm/yyyy
+    // Formata data para dd/mm/yyyy
     const dataFormatada = new Date(data_nascimento).toLocaleDateString('pt-BR');
 
-    // Número de telefone de destino no WhatsApp (incluindo o código do país e da cidade)
+    // Número de telefone de destino no WhatsApp
     const numeroWhatsApp = '5513991290916';
-
-    // Mensagem que será enviada
+    
     const mensagem = `Olá! Gostaria de realizar uma matrícula com os seguintes dados:
     - *Nome do Responsável:*\n     ${nome_responsavel}
     - *E-mail:*\n      ${email}

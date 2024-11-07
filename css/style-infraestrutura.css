@@ -384,7 +384,7 @@ footer .social-media a{
     .nav-logo {
         position: absolute;
         left: 20px;
-        top:13%;
+        top:15%;
     }
 
     .nav-logo img {
@@ -429,7 +429,7 @@ footer .social-media a{
         padding-bottom: 1rem;
     }
     .mobile-menu.open {
-        display: block; /* Torna o menu visível */
+        display: block; 
     }
     .mobile-menu .nav-item {
         display: block;
@@ -444,7 +444,7 @@ footer .social-media a{
     }
 
     .mobile-menu a {
-        color: inherit; /* Para manter a cor herdada */
+        color: inherit;
         text-decoration: none; /* Remove a linha embaixo dos links */
     }
 
@@ -454,19 +454,6 @@ footer .social-media a{
         order: 2;
         color: white;
     }
-
-    .visit-button button {
-        border: none;
-        border-radius: 5px;
-        background-color: #044A03;
-    }
-
-    .visit-button button a {
-        border:none;
-        text-decoration: none;
-        font-weight: 400;
-    }
-
 
     nav ul {
         flex-direction: column;
@@ -603,8 +590,8 @@ footer .social-media a{
     }
     
     .nav-logo img {
-        width: 65px; 
-        height: 65px;
+        width: 60px; 
+        height: 60px;
         border-radius: 0; 
     }
 

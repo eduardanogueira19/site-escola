@@ -83,6 +83,12 @@ button.depois{
 /*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
+    outline: none;
+}
+
+.mobile-menu-icon:hover{
+    outline: none;
+
 }
 
 .mobile-menu {

@@ -83,6 +83,10 @@
         text-decoration: none;
         color: inherit;
     }
+    ul{
+        padding: 20px;
+    }
+
 
     section{
         padding: 20px;
@@ -191,6 +195,16 @@
     }
     button:hover{
         background-color: #008000;
+    }
+
+    #status{
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #cancel-btn{
+        display: none;
     }
 
     @media screen and (max-width: 768px) {
@@ -401,50 +415,45 @@
       <div id="status"></div>
     
       <script>
-        // Função para aceitar a política e mostrar o status
+       // Função para aceitar a política e mostrar o status
         function acceptPolicy() {
-          // Salvar que o usuário aceitou no localStorage
-          localStorage.setItem("policyAccepted", "true");
-    
-          // Exibir a mensagem de sucesso
-          document.getElementById("status").textContent = "Você aceitou a Política de Privacidade.";
-    
-          // Alterar o botão para refletir que a política foi aceita
-          document.getElementById("accept-btn").disabled = true;
-          document.getElementById("accept-btn").textContent = "Política Aceita";
-    
-          // Mostrar o botão de cancelar aceitação
-          document.getElementById("cancel-btn").style.display = "inline-block";
-        }
-    
-        // Função para cancelar a aceitação da política
-        function cancelPolicy() {
-          // Remover o item do localStorage
-          localStorage.removeItem("policyAccepted");
-    
-          // Resetar a mensagem de status e mostrar o botão de aceitar novamente
-          document.getElementById("status").textContent = "Você não aceitou a Política de Privacidade.";
-          document.getElementById("accept-btn").disabled = false;
-          document.getElementById("accept-btn").textContent = "Aceitar Política de Privacidade";
-    
-          // Esconder o botão de cancelar aceitação
-          document.getElementById("cancel-btn").style.display = "none";
-        }
-    
-        // Verificar se o usuário já aceitou a política na próxima vez que ele acessar a página
-        window.onload = function() {
-          if (localStorage.getItem("policyAccepted")) {
-            // Se já aceitou, mostrar que a política foi aceita
-            document.getElementById("status").textContent = "Você já aceitou a Política de Privacidade.";
-            document.getElementById("accept-btn").disabled = true;
-            document.getElementById("accept-btn").textContent = "Política Aceita";
+            // Salvar que o usuário aceitou no localStorage
+            localStorage.setItem("policyAccepted", "true");
+
+            // Exibir a mensagem de sucesso
+            document.getElementById("status").textContent = "Você aceitou a Política de Privacidade.";
+
+            // Alternar a exibição dos botões
+            document.getElementById("accept-btn").style.display = "none";
             document.getElementById("cancel-btn").style.display = "inline-block";
-          } else {
+            }
+
+            // Função para cancelar a aceitação da política
+            function cancelPolicy() {
+            // Remover o item do localStorage
+            localStorage.removeItem("policyAccepted");
+
+            // Resetar a mensagem de status e mostrar o botão de aceitar novamente
             document.getElementById("status").textContent = "Você não aceitou a Política de Privacidade.";
-            document.getElementById("accept-btn").disabled = false;
-            document.getElementById("accept-btn").textContent = "Aceitar Política de Privacidade";
+            
+            // Alternar a exibição dos botões
+            document.getElementById("accept-btn").style.display = "inline-block";
             document.getElementById("cancel-btn").style.display = "none";
-          }
+            }
+
+            // Verificar se o usuário já aceitou a política na próxima vez que ele acessar a página
+            window.onload = function() {
+            if (localStorage.getItem("policyAccepted")) {
+                // Se já aceitou, mostrar que a política foi aceita e exibir o botão de cancelar
+                document.getElementById("status").textContent = "Você já aceitou a Política de Privacidade.";
+                document.getElementById("accept-btn").style.display = "none";
+                document.getElementById("cancel-btn").style.display = "inline-block";
+            } else {
+                // Se não aceitou, mostrar o botão de aceitar e esconder o botão de cancelar
+                document.getElementById("status").textContent = "Você não aceitou a Política de Privacidade.";
+                document.getElementById("accept-btn").style.display = "inline-block";
+                document.getElementById("cancel-btn").style.display = "none";
+            }
         }
       </script>
     <footer>

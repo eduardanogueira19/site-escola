@@ -467,7 +467,20 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin: 0.4px; /* Ajuste o espaçamento conforme necessário */
 }
+.instagram-link{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    background-color: #036602;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    width: 27%;
+}
 
+.instagram-link:hover{
+    background-color: #008000;
+}
 /* Centralizar o mapa */
 .mapa {
     display: flex;
@@ -549,7 +562,6 @@ footer .social-media a{
     color:white;
     font-size: 18px;
 }
-
 
 
 /* Estilos responsivos */

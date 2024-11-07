@@ -133,7 +133,7 @@ h2{
 h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size:1.025rem;
+    font-size:0.8rem;
     margin: 0 0 10px 0;
     color:#044A03;
     text-align: left;
@@ -237,8 +237,9 @@ nav ul li a:hover {
 /*estilo seções*/
 section {
     margin: 5px 0;
-    padding: 45px 0;
-    background-color: #F4F4F4;
+    padding: 20px 10px;
+    gap: 5px;
+    background-color: transparent;
 }
 /* Estilo do rodapé */
 footer {

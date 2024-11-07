@@ -65,6 +65,7 @@ body::before {
 }
 
 .mobile-menu {
+    text-decoration-line: none;
     display: none;
 }
 
@@ -89,6 +90,7 @@ body::before {
 .visit-button:hover {
     background-color: #036602;
 }
+
 
 
 .submenu-list {
@@ -390,8 +392,8 @@ footer .social-media a{
         height: 30px;
     }
         
-    /*Menu hamburguer*/
-    .mobile-menu-icon {
+   /*Menu hamburguer*/
+   .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
         top:15%;
@@ -412,9 +414,6 @@ footer .social-media a{
         margin-right:1%;
     }
 
-    .login-button {
-        display: none;
-    }
     .mobile-menu-icon {
         display: block;
     }
@@ -424,92 +423,6 @@ footer .social-media a{
         cursor: pointer;
     }
     .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .visite-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .visite-button button {
-        width: 100%;
-    }
-
-    .visit-button {
-        position: static;
-        margin: 0 auto;
-        order: 2;
-    }
-
-    .visit-button button {
-        border: none;
-        border-radius: 5px;
-        background-color: #044A03;
-        color:white;
-    }
-
-    .visit-button button a {
-        border:none;
-        text-decoration: none;
-        font-weight: 400;
-    }
-
-    .visit-button:hover {
-        background-color: #036602;
-    }
-
-
-    nav ul {
-        flex-direction: column;
-    }
-            
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    /*Menu hamburguer*/
-    .mobile-menu-icon {
-        background-color: rgba(0, 0, 0, 0.1);
-        position:absolute;
-        top:15%;
-        right:5%;
-        display: none;
-        padding:0.5px;
-        border-radius: 25%;
-    }
-
-    .mobile-menu {
-        background-color: #f4f4f4;
-        width: 150px;
-        border-radius:15px;
-        right: 0;
-        padding:10px;
-        display: none;
-        margin-top: 40%;
-        margin-right:1%;
-    }
-
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        text-decoration: none;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -530,17 +443,22 @@ footer .social-media a{
         width: 100%;
     }
 
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+
     .visit-button {
         position: static;
         margin: 0 auto;
         order: 2;
+        color: white;
     }
 
     .visit-button button {
         border: none;
         border-radius: 5px;
         background-color: #044A03;
-        color:white;
     }
 
     .visit-button button a {
@@ -549,9 +467,18 @@ footer .social-media a{
         font-weight: 400;
     }
 
-    .visit-button:hover {
-        background-color: #036602;
+
+    nav ul {
+        flex-direction: column;
     }
+            
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    
 
     .nav-logo img {
         width: 65px; 
@@ -681,14 +608,14 @@ footer .social-media a{
         border-radius: 0; 
     }
 
-    /* Menu hambúrguer */
-    .mobile-menu-icon {
+   /* Menu hambúrguer */
+   .mobile-menu-icon {
         position: absolute;
         top: 10%;
         right: 3%;
         display: block;
         background-color: rgba(0, 0, 0, 0.1);
-        padding: 0.125px;
+        padding: 0.5px;
         border-radius: 25%;
     }
 
@@ -702,6 +629,11 @@ footer .social-media a{
         gap: 10px;
     }
 
+    .mobile-menu a {
+        color: inherit; /* Para manter a cor herdada */
+        text-decoration: none; /* Remove a linha embaixo dos links */
+    }
+
     .visit-button {
         margin: 0 auto;
     }
@@ -713,9 +645,6 @@ footer .social-media a{
         color: white;
     }
 
-    .visit-button:hover {
-        background-color: #036602;
-    }
 
     nav ul {
         flex-direction: column;

@@ -58,3 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// Função para aceitar a política de privacidade
+function acceptPolicy() {
+    localStorage.setItem("policyAccepted", "true"); 
+    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
+}

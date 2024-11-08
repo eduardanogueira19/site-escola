@@ -51,3 +51,10 @@ function menuShow() {
         document.querySelector('.icon').src = "../imagens/close_white_36dp.svg";
     }
 }
+
+
+// Função para aceitar a política de privacidade
+function acceptPolicy() {
+    localStorage.setItem("policyAccepted", "true"); 
+    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
+  }

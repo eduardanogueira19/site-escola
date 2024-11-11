@@ -388,8 +388,19 @@ footer .social-media a{
 }
 
 .contato, .direitos{
+    text-decoration: none;
     color:white;
     font-size: 18px;
+}
+
+
+.direitos a{
+    text-decoration: none;
+    color: white;
+}
+
+.direitos a:hover{
+    color: #97a197;;
 }
 
 .banner {

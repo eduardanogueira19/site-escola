@@ -1,3 +1,18 @@
+// Função para aceitar a política de privacidade
+function acceptPolicy() {
+    localStorage.setItem("policyAccepted", "true"); 
+    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
+}
+  
+// Verifica se o usuário já aceitou a política de privacidade
+window.onload = function() {
+    if (!localStorage.getItem("policyAccepted")) { // Se não aceitou, exibe o banner
+      document.getElementById("cookie-banner").style.display = "flex";
+    } else {
+      document.getElementById("cookie-banner").style.display = "none"; // Oculta se já aceitou
+    }
+}
+
 //Função para enviar informações para o whatsapp
 function enviarParaWhatsApp() {
     const nome_responsavel = document.getElementById('nome_responsavel').value;
@@ -41,8 +56,6 @@ function menuShow() {
     }
 }
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const submenuToggle = document.querySelector('.submenu-toggle');
     const submenuList = submenuToggle.nextElementSibling;
@@ -58,10 +71,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
-// Função para aceitar a política de privacidade
-function acceptPolicy() {
-    localStorage.setItem("policyAccepted", "true"); 
-    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
-}

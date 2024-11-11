@@ -1,3 +1,18 @@
+// Função para aceitar a política de privacidade
+function acceptPolicy() {
+    localStorage.setItem("policyAccepted", "true"); 
+    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
+}
+  
+// Verifica se o usuário já aceitou a política de privacidade
+window.onload = function() {
+    if (!localStorage.getItem("policyAccepted")) { // Se não aceitou, exibe o banner
+      document.getElementById("cookie-banner").style.display = "flex";
+    } else {
+      document.getElementById("cookie-banner").style.display = "none"; // Oculta se já aceitou
+    }
+}
+
 //Função troca imagens da capa
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slides img');
@@ -51,10 +66,3 @@ function menuShow() {
         document.querySelector('.icon').src = "../imagens/close_white_36dp.svg";
     }
 }
-
-
-// Função para aceitar a política de privacidade
-function acceptPolicy() {
-    localStorage.setItem("policyAccepted", "true"); 
-    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
-  }

@@ -48,8 +48,8 @@ body::before {
 }
 
 .galeria-container img {
-    width: 300px;  
-    height: 300px; 
+    width: 400px;  
+    height: 400px; 
     object-fit: cover; 
     border: 0.5px solid #036602; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -330,6 +330,16 @@ footer .social-media a{
 .contato, .direitos{
     color:white;
     font-size: 18px;
+}
+
+
+.direitos a{
+    text-decoration: none;
+    color: white;
+}
+
+.direitos a:hover{
+    color: #97a197;;
 }
 
 .banner {

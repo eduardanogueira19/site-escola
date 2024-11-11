@@ -341,6 +341,14 @@ footer .social-media a{
     font-size: 18px;
 }
 
+.direitos a{
+    text-decoration: none;
+    color: white;
+}
+
+.direitos a:hover{
+    color: #97a197;;
+}
 
 .banner {
     position: fixed;

@@ -544,6 +544,15 @@ footer .social-media a{
     font-size: 18px;
 }
 
+.direitos a{
+    text-decoration: none;
+    color: white;
+}
+
+.direitos a:hover{
+    color: #97a197;;
+}
+
 .banner {
     position: fixed;
     bottom: 0;
@@ -557,14 +566,14 @@ footer .social-media a{
     justify-content: center;
     font-size: 14px;
     z-index: 1000;
-  }
+}
   
-  .banner p {
+.banner p {
     margin: 0;
     padding-right: 10px;
-  }
+}
   
-  .banner button {
+.banner button {
     background-color: #044A03; /* Verde ou cor que combine com seu site */
     color: white;
     border: none;
@@ -572,11 +581,11 @@ footer .social-media a{
     cursor: pointer;
     font-size: 14px;
     border-radius: 3px;
-  }
+}
   
-  .banner button:hover {
+.banner button:hover {
     background-color: #008000;
-  }
+}
 
 @media screen and (max-width: 768px) {
     html{

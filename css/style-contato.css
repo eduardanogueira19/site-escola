@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 30px;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -16,13 +14,11 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
-
 body::before {
     content: "";
     display: block;
     height: 60px;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -37,58 +33,47 @@ header {
     align-items: center;
     padding: 8px 20px;
 }
-
 body::before {
     content: "";
     display: block;
     height: 60px;
 }
-
 main {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
 .contact-info {
     background-color: #f4f4f4;
     border-radius: 8px;
 }
-
 .map-container {
     margin-top: 20px;
 }
-
 .map-container iframe {
     width: 100%;
     height: 300px;
     border: none;
 }
-
 .social {
     text-align: left;
     font-size: 100px;
 }
-
 .social-media a {
     margin: 0;
     color: #2a7d2e;
     text-decoration: none;
     font-size: 1.2rem;
 }
-
 .social-media a:hover {
     color: #246b29;
 }
-
 .mobile-menu-icon {
     display: none;
 }
-
 .mobile-menu {
     display: none;
 }
-
 .visit-button {
     background-color: #044A03;
     color: white;
@@ -106,11 +91,9 @@ main {
     transform: translateY(-50%);
     right: 0;
 }
-
 .visit-button:hover {
     background-color: #036602;
 }
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -127,27 +110,22 @@ main {
     justify-content: center; 
     flex-direction: row;
 }
-
 .submenu-list li {
     padding: 10px;
 }
-
 .submenu-list li a {
     text-decoration: none;
     color: #333;
     display: block;
     font-size: 20px;
 }
-
 .nav-item {
     position: relative;
 }
-
 .nav-item.submenu.open .submenu-list {
     display: flex;
     width: auto;
-}
-   
+}  
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -156,7 +134,6 @@ h1{
     text-align: left;
     color:#044A03;
 }
-
 h2{
     font-weight: 700;
     font-size:1.5rem;
@@ -166,7 +143,6 @@ h2{
     font-family: 'Poppins', sans-serif; 
     text-align: left;
 }
-
 h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -175,7 +151,6 @@ h3{
     color:#044A03;
     text-align: left;
 }
-
 h4{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -183,7 +158,6 @@ h4{
     color:white;
     margin-top: 10px;
 }
-
 p{
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -193,20 +167,17 @@ p{
     color: black;
     font-weight: 300;
 }
-
 .nav-logo {
     position: absolute;
     left: 20px;
     top:50%;
     transform: translateY(-50%);
 }
-
 .nav-logo img {
     width: 60px; 
     height: 60px;
     border-radius: 0; 
 }
-
 .nav-list{
     display: flex;
     width: 70%;
@@ -217,11 +188,9 @@ p{
     padding: 0;
     gap: 5px;
 }
-
 .nav-list li {
     display: inline-block;
 }
-
 .nav-list a {
     text-decoration: none;
     color: #333;
@@ -231,25 +200,21 @@ p{
     right: 50px;
     gap: 1px;
 }
-
 nav {
     flex-grow: 1;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     color: #333;
     text-decoration: none;
@@ -257,27 +222,22 @@ nav ul li a {
     font-size: 20px;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
     color: #044A03;
 }
-
 main {
     padding: 5px;
     margin-top: 0px;
 }
-
 section {
     margin: 5px 0;
     padding: 15px 0;
     background-color: transparent;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 .mapa {
     display: flex;
     justify-content: center;
@@ -287,13 +247,11 @@ a {
     height: 300px;
     margin: 0 auto;
 }
-
 .mapa iframe {
     width: 100%;
     border-radius: 10px;
     height: 100%;
 }
-
 footer {
     background-color: #333;
     color: white;
@@ -302,7 +260,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 .footer-content {
     color: white;
     padding: 0px;
@@ -312,60 +269,48 @@ footer {
     max-width: 1200px;
     font-size: 18px;
 }
-
 .footer-section {
     color: white;
     padding: 0px;
     flex: 1;
     margin: 0 20px;
 }
-
 .footer-section h2 {
     margin-bottom: 10px;
 }
-
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin: 5px 0;
 }
-
 .footer-section a {
     color: white;
     text-decoration: none;
 }
-
 .footer-section a:hover {
     color: #97a197;
 }
-
 .footer-bottom {
     color: white;
     text-align: center;
     margin-top: 20px; 
 }
-
 footer .social-media a{
     font-size: 45px;
 }
-
 .contato, .direitos{
     color:white;
     font-size: 18px;
 }
-
 .direitos a{
     text-decoration: none;
     color: white;
 }
-
 .direitos a:hover{
     color: #97a197;;
 }
-
 .banner {
     position: fixed;
     bottom: 0;
@@ -379,36 +324,30 @@ footer .social-media a{
     justify-content: center;
     font-size: 14px;
     z-index: 1000;
-  }
-  
+}  
 .banner p {
     margin: 0;
     padding-right: 10px;
-}
-  
+} 
 .banner button {
-    background-color: #044A03; /* Verde ou cor que combine com seu site */
+    background-color: #044A03;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 14px;
     border-radius: 3px;
-}
-  
+} 
 .banner button:hover {
     background-color: #008000;
 }
-
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
     }
-
     body{
         font-size: 1rem;
     }
-   
     main {
         padding: 25px;
         margin-top: 0px;
@@ -417,49 +356,39 @@ footer .social-media a{
         height: 60px;
         padding: 8px 15px;
     }
-
     h1 {
         font-size: 1.5rem;
     }
-
     h2 {
         font-size: 1.2rem; 
     }
-
     h3{
         font-size:0.8rem;
     }
-
     h4{
         font-size:0.6rem;
     }
-
     p {
         font-size: 0.5; 
     }
-
     .nav-logo {
         position: absolute;
         left: 20px;
         top:50%;
     }
-
     .nav-logo img {
         width: 30px; 
         height: 30px;
-    }
-        
+    }   
     nav ul {
         flex-direction: column;
-    }
-            
+    }       
     .nav-bar {
         padding: 1.5rem 4rem;
     }
     .nav-item {
         display: none;
     }
-
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
@@ -469,7 +398,6 @@ footer .social-media a{
         padding:0.5px;
         border-radius: 25%;
     }
-
     .mobile-menu {
         background-color: #f4f4f4;
         width: 150px;
@@ -480,106 +408,84 @@ footer .social-media a{
         margin-top: 50%;
         margin-right:1%;
     }
-
     .mobile-menu-icon {
         display: block;
     }
-
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-
     .mobile-menu.open {
         display: block; 
     }
-
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-
     .mobile-menu .visite-button {
         display: block;
         padding: 1rem 2rem;
         width: 100%;
     }
-
     .visit-button {
         position: static;
         margin: 0 auto;
         order: 2;
     }
-
     .visit-button:hover {
         background-color: #036602;
     }
-
     .nav-logo img {
         width: 65px; 
         height: 65px;
     }
-
     section {
         padding: 25px;
         margin: 5px 0;
-    }
-             
+    }        
     .nav-list {
         display: none;
     }
-
     .nav-list li {
         padding: 10px 0;
     }
-
     .nav-list.active {
         display: flex;
     }
-    
     footer {
         padding: 10px;
         flex-direction: column;
     }
-
     .footer-content {
         flex-direction: column; 
         align-items: center;
         width: 100%; 
         font-size: 14px;
     }
-
     .footer-section {
         font-size:12px;
         margin: 10px 0;
     }
-
     .footer-section h2 {
         font-size: 1.5rem;
     }
-
     .footer-bottom {
         margin-top: 10px;
     }
-    
     footer .social-media a{
         font-size: 20px;
     }
-    
     .contato, .direitos{
         font-size: 12px;
     }
-
 }
-
 @media screen and (max-width: 480px) {
     html, body {
         font-size: 14px; 
@@ -587,48 +493,38 @@ footer .social-media a{
         margin: 0;
         padding: 0;
     }
-
     main {
         padding: 20px;
         margin-top: 0;
     }
-
     header {
         height: 60px;
         padding: 8px 10px;
     }
-
     h1 {
         font-size: 1.5rem;
     }
-
     h2 {
         font-size: 1.45rem;
     }
-
     h3 {
         font-size: 1.25rem;
     }
-
     h4 {
         font-size: 1rem;
     }
-
     p {
         font-size: 0.9rem;
     }
-
     .nav-logo {
         position: absolute;
         left: 10px;
         top: 50%;
     }
-
     .nav-logo img {
         width: 60px;
         height: 60px;
     }
-
     .mobile-menu-icon {
         position: absolute;
         top: 10%;
@@ -638,7 +534,6 @@ footer .social-media a{
         padding: 0.5px;
         border-radius: 25%;
     }
-
     .mobile-menu {
         background-color: #f4f4f4;
         width: 200px;
@@ -648,68 +543,54 @@ footer .social-media a{
         margin-top: 70%;
         gap: 10px;
     }
-
     .visit-button {
         margin: 0 auto;
     }
-
     .visit-button button {
         border: none;
         border-radius: 5px;
         background-color: #044A03;
         color: white;
     }
-
     .visit-button:hover {
         background-color: #036602;
     }
-
     section{
         padding: 30px;
     }
-
     nav ul {
         flex-direction: column;
     }
-
     footer {
         padding: 10px;
         flex-direction: column; 
     }
-
     .footer-content {
         flex-direction: column;
         align-items: center; 
         width: 100%; 
         font-size: 12px; 
     }
-
     .footer-section {
         font-size: 12px;
         margin-top: 10px 0;
     }
-    
     .footer-section h2 {
         font-size: 1.2rem;
     }
-    
     .footer-section ul li {
         margin: 3px 0; 
     }
-
     footer .social-media {
         flex-direction: column;
         gap: 10px;
         align-items: center;
     }
-
     footer .social-media a {
         font-size: 18px; 
     }
-
     .contato,
     .direitos {
         font-size: 11px;
     }
-    
 }

@@ -11,10 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style-fundamental2.css">
-    
 </head>
 <body>
-
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
@@ -45,7 +43,6 @@
                 <button onclick="menuShow()"><img class="icon" src="../imagens/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-    
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" rel="prev">Home</a></li>
@@ -56,20 +53,16 @@
             </ul>
             <div class="visit-button">
                 <button><a href="https://wa.me/5513991290916" class="visit-button" target="_blank" rel="external">Agende uma Visita</a></button>
-            </div>
-            
+            </div>    
         </div>
     </header>
-
     <div id="cookie-banner" class="banner">
         <p style="color: white; font-size: 14px;">Usamos este site para fornecer informações sobre matrículas e o funcionamento da escola. Ao continuar, você concorda com nossa <a style="color: #008000;" href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.</p>
         <button onclick="acceptPolicy()">Aceitar</button>
     </div>
-
     <div class="capa">
         <img src="../imagens/capa-ensino-fundamental2.png" alt="imagem 1">
     </div>
-
     <main>
         <h3>11 anos aos 15 anos </h3>
         <div class="wrapper">
@@ -88,7 +81,6 @@
                 </div>
             </div>
         </section>
-        
         <section>
             <h3>Educação Financeira</h3>
             <div class="wrapper">
@@ -98,9 +90,7 @@
                 <p class="container">A educação financeira desempenha um papel crucial no Ensino	Fundamental 2 ao capacitar os alunos com habilidades práticas e conhecimentos necessários para administrar suas finanças de forma responsável e eficaz. Durante esse período de desenvolvimento, os alunos estão em uma fase crucial de transição para a adolescência, onde começam a assumir mais responsabilidades financeiras e a tomar decisões que podem impactar seu futuro.</p>
             </div>        
         </section>
-        
     </main>
-        
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -109,8 +99,7 @@
                 <p class="contato"><strong>Telefone:</strong>(13) 3477-3317</p>
                 <p class="contato"><strong>Whatsapp:</strong>(13) 99129-0916</p>
                 <p class="contato"><strong>Email: </strong>colegiofutura2006@hotmail.com</p>
-            </div>
-                
+            </div>   
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Navegação</strong></h4>
                 <ul>
@@ -121,7 +110,6 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
-    
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Redes Sociais</strong></h4>
                     <ul class="social-media">
@@ -130,20 +118,16 @@
                     </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p style="text-align: center;" class="direitos"><a href="politicas-privacidade.html">Política de Privacidade</a></p>
             <p class ="direitos">&copy; 2024 Colégio Futura. Todos os direitos reservados.</p>
         </div>
     </footer>
-    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const submenuToggle = document.querySelector('.submenu-toggle');
             const submenuList = submenuToggle.nextElementSibling;
-
             submenuList.style.display = 'none';
-
             submenuToggle.addEventListener('click', function(event) {
                 event.preventDefault();
                 if (submenuList.style.display === 'none') {
@@ -155,6 +139,5 @@
         });
     </script>
     <script src="../js/script-paginas.js"></script>
-
-    </body>
+</body>
 </html>

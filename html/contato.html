@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/style-contato.css">
 </head>
 <body>
-
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
@@ -44,7 +43,6 @@
                 <button onclick="menuShow()"><img class="icon" src="../imagens/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-    
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="../index.html" rel="prev">Home</a></li>
@@ -55,19 +53,14 @@
                 <li class="nav-item">
                     <a href="https://wa.me/5513991290916" class="visit-button" target="_blank" rel="external">Agende uma Visita</a>
                 </li>
-            </ul>
-        
-                
+            </ul>     
         </div>
     </header>
-
     <div id="cookie-banner" class="banner">
         <p style="color: white; font-size: 14px;">Usamos este site para fornecer informações sobre matrículas e o funcionamento da escola. Ao continuar, você concorda com nossa <a style="color: #008000;" href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.</p>
         <button onclick="acceptPolicy()">Aceitar</button>
     </div>
-
     <main>
-
         <section class="contact-info">
             <h2>Informações de Contato</h2>
             <p><strong>Endereço:</strong>Av. Maria Cavalcante da Silva, 601 - Jardim Samambaia, Praia Grande - SP, 11712-560</p>
@@ -76,21 +69,18 @@
             <p><strong>E-mail:</strong> colegiofutura2006@hotmail.com</p>
             <p><strong>Horário de atendimento:</strong> Seg - Sex: 8h - 18h</p>
         </section>
-
         <section>
             <h3>Nossa Localização</h3>
             <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.930130381902!2d-46.5304285!3d-24.0335289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce2150e588fc4f%3A0xaf74fff201193d26!2sCol%C3%A9gio%20Futura!5e0!3m2!1spt-BR!2sbr!4v1729093344297!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section> 
-        
         <section class="social">
             <h3>Redes Sociais</h3>
             <a href="https://www.instagram.com/futura_colegio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> <i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/5513991290916" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </section>
     </main>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -100,7 +90,6 @@
                 <p class="contato"><strong>Whatsapp:</strong>(13) 99129-0916</p>
                 <p class="contato"><strong>Email: </strong>colegiofutura2006@hotmail.com</p>
             </div>
-                
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Navegação</strong></h4>
                 <ul>
@@ -111,7 +100,6 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
-    
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Redes Sociais</strong></h4>
                     <ul class="social-media">
@@ -120,7 +108,6 @@
                     </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p style="text-align: center;" class="direitos"><a href="politicas-privacidade.html">Política de Privacidade</a></p>
             <p class ="direitos">&copy; 2024 Colégio Futura. Todos os direitos reservados.</p>
@@ -130,9 +117,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const submenuToggle = document.querySelector('.submenu-toggle');
             const submenuList = submenuToggle.nextElementSibling;
-
             submenuList.style.display = 'none';
-
             submenuToggle.addEventListener('click', function(event) {
                 event.preventDefault();
                 if (submenuList.style.display === 'none') {

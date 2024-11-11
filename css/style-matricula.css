@@ -20,16 +20,15 @@ body {
 body::before {
     content: "";
     display: block;
-    height: 60px; /* Espaço equivalente à altura do header */
+    height: 60px; 
 }
 
-/* Estilo cabeçalho */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Ajuste da altura */
+    height: 60px;
     background-color: #F4F4F4;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -74,8 +73,6 @@ body::before {
     margin-bottom: 10px;
 }
 
-
-
 label {
     display: block;
     margin: 5px 5px 5px;
@@ -89,15 +86,14 @@ input, select {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    padding: 5px; /* Aumenta a altura do campo */
-    font-size: 0.8rem; /* Tamanho do texto dentro do campo */
+    padding: 5px; 
+    font-size: 0.8rem; 
     color:#888;
 }
 
-/* Estiliza o placeholder */
 input::placeholder {
-    font-size: 0.9rem; /* Aumenta o tamanho do texto do placeholder */
-    color: #888; /* Cor do placeholder */
+    font-size: 0.9rem; 
+    color: #888; 
 }
 
 .formulario{
@@ -128,7 +124,6 @@ button{
     display: none;
 }
 
-/* Estilo do botão de agendar visita */
 .visit-button {
     background-color: #044A03;
     color: white;
@@ -151,7 +146,6 @@ button{
     background-color: #036602;
 }
 
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -173,7 +167,6 @@ button{
     padding: 10px;
 }
 
-/* Link do submenu */
 .submenu-list li a {
     text-decoration: none;
     color: #333;
@@ -189,8 +182,7 @@ button{
     display: flex;
     width: auto;
 }
-
-/*Estilo das escritas*/        
+        
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -237,7 +229,6 @@ p{
     font-weight: 300;
 }
 
-/* Garantindo que as imagens sejam responsivas */
 img {
     width: 100%;
     height: auto;
@@ -245,7 +236,6 @@ img {
     object-fit: cover; 
 }
 
-/* Estilo do ícone */
 .nav-logo {
     position: absolute;
     left: 20px;
@@ -259,9 +249,6 @@ img {
     border-radius: 0; 
 }
 
-/* Estilo para lista de navegação */
-
-/* Estilo para lista de navegação */
 .nav-list{
     display: flex;
     width: 70%;
@@ -317,18 +304,12 @@ nav ul li a:hover {
     color: #044A03;
 }
 
-/*estilo seções*/
 section {
     margin: 0;
     padding: 0;
     background-color: #F4F4F4;
 }
 
-
-
-
-
-/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -424,7 +405,7 @@ footer .social-media a{
 }
   
 .banner button {
-    background-color: #044A03; /* Verde ou cor que combine com seu site */
+    background-color: #044A03; 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -437,8 +418,6 @@ footer .social-media a{
     background-color: #008000;
 }
 
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
@@ -507,7 +486,7 @@ footer .social-media a{
     .nav-item {
         display: none;
     }
-    /*Menu hamburguer*/
+
     .mobile-menu-icon {
         background-color: rgba(0, 0, 0, 0.1);
         position:absolute;
@@ -563,7 +542,6 @@ footer .social-media a{
         width: 100%;
     }
 
-
     .nav-logo img {
         width: 65px; 
         height: 65px;
@@ -575,8 +553,8 @@ footer .social-media a{
     }
 
     .container, .galeria-container {
-        max-width: 90%; /* Para deixar um pouco de espaço nas laterais */
-        margin-bottom: 10px; /* Espaço entre as divs */
+        max-width: 90%;
+        margin-bottom: 10px; 
     }
 
     section {
@@ -623,10 +601,9 @@ footer .social-media a{
 }
 
 @media screen and (max-width: 480px) {
-    /* Impedir rolagem horizontal no corpo da página */
     html, body {
-        font-size: 14px; /* Tamanho ajustado para telas pequenas */
-        overflow-x: hidden; /* Evita que a página role horizontalmente */
+        font-size: 14px; 
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -661,7 +638,6 @@ footer .social-media a{
         font-size: 0.9rem;
     }
 
-   
     .nav-logo {
         position: absolute;
         left: 20px;
@@ -675,7 +651,6 @@ footer .social-media a{
         border-radius: 0; 
     }
 
-    /* Menu hambúrguer */
     .mobile-menu-icon {
         width: 45px;
         height: 45px;
@@ -701,12 +676,12 @@ footer .social-media a{
     }
 
     .mobile-menu a {
-        color: inherit; /* Para manter a cor herdada */
-        text-decoration: none; /* Remove a linha embaixo dos links */
+        color: inherit;
+        text-decoration: none; 
     }
 
     .mobile-menu a:visited {
-        color: inherit; /* Garante que a cor não mude após ser clicado */
+        color: inherit;
     }
 
     .visit-button {
@@ -742,7 +717,6 @@ footer .social-media a{
         max-width: 100%;
         padding: 8px;
     }
-
     .galeria-container img {
         width: 100%;
         margin-bottom: 8px;
@@ -751,7 +725,6 @@ footer .social-media a{
         padding: 10px;
         flex-direction: column; 
     }
-
     .footer-content {
         flex-direction: column;
         align-items: center; 
@@ -765,28 +738,22 @@ footer .social-media a{
     .footer-section h2 {
         font-size: 1.2rem;
     }
-    
     .footer-section ul li {
         margin: 3px 0; 
     }
-
     footer .social-media {
         flex-direction: column;
         gap: 10px;
         align-items: center;
     }
-
     footer .social-media a {
         font-size: 18px; 
     }
-
     .contato,
     .direitos {
         font-size: 11px;
     }
-
     section{
         padding: 30px;
-    }
-    
+    } 
 }

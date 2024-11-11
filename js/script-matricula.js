@@ -1,19 +1,16 @@
-// Função para aceitar a política de privacidade
 function acceptPolicy() {
     localStorage.setItem("policyAccepted", "true"); 
-    document.getElementById("cookie-banner").style.display = "none"; // Esconde o banner
+    document.getElementById("cookie-banner").style.display = "none";
 }
-  
-// Verifica se o usuário já aceitou a política de privacidade
+
 window.onload = function() {
-    if (!localStorage.getItem("policyAccepted")) { // Se não aceitou, exibe o banner
+    if (!localStorage.getItem("policyAccepted")) { 
       document.getElementById("cookie-banner").style.display = "flex";
     } else {
-      document.getElementById("cookie-banner").style.display = "none"; // Oculta se já aceitou
+      document.getElementById("cookie-banner").style.display = "none"; 
     }
 }
 
-//Função para enviar informações para o whatsapp
 function enviarParaWhatsApp() {
     const nome_responsavel = document.getElementById('nome_responsavel').value;
     const email = document.getElementById('email').value;
@@ -22,12 +19,8 @@ function enviarParaWhatsApp() {
     const data_nascimento = document.getElementById('data_nascimento').value;
     const curso = document.getElementById('curso').value;
 
-    // Formata data para dd/mm/yyyy
     const dataFormatada = new Date(data_nascimento).toLocaleDateString('pt-BR');
-
-    // Número de telefone de destino no WhatsApp
     const numeroWhatsApp = '5513991290916';
-    
     const mensagem = `Olá! Gostaria de realizar uma matrícula com os seguintes dados:
     - *Nome do Responsável:*\n     ${nome_responsavel}
     - *E-mail:*\n      ${email}
@@ -36,15 +29,11 @@ function enviarParaWhatsApp() {
     - *Data de Nascimento:*\n     ${dataFormatada}
     - *Curso Desejado:*\n      ${curso}`;
 
-    // URL de envio para o WhatsApp
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
 
-    // Abre o WhatsApp com a mensagem pré-preenchida
     window.open(urlWhatsApp, '_blank');
 }
 
-
-// Função abre e fecha menu em telas menores
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {

@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style-sobre-nos.css">
-    
 </head>
 <body>
     <header>
@@ -33,7 +32,6 @@
                     <li class="nav-item"><a href="matricula.html" rel="next">Matricula-se</a></li>
                     <li class="nav-item"><a href="contato.html" rel="next">Contato</a></li>
                     <li> 
-                        <!-- Botão de agende uma visita -->
                         <a style="color: white;"  href="https://wa.me/5513991290916" class="visit-button" target="_blank" rel="external">
                             Agende uma Visita
                         </a></li>
@@ -43,7 +41,6 @@
                 <button onclick="menuShow()"><img class="icon" src="../imagens/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-    
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="../index.html" rel="prev">Home</a></li>
@@ -55,17 +52,13 @@
             <div class="visit-button">
                 <button><a href="https://wa.me/5513991290916" class="visit-button" target="_blank" rel="external">Agende uma Visita</a></button>
             </div>
-            
         </div>
     </header>
-
     <div id="cookie-banner" class="banner">
         <p style="color: white; font-size: 14px;">Usamos este site para fornecer informações sobre matrículas e o funcionamento da escola. Ao continuar, você concorda com nossa <a style="color: #008000;" href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.</p>
         <button onclick="acceptPolicy()">Aceitar</button>
     </div>
-    
     <section id="sobre_nos">
-        <!--Texto sobre o colégio-->
 	    <section>
             <h1>Sobre nós</h1>	
             <p>O Colégio Futura foi aberto em 2006 como um grande sonho que estava prestes a se tornar realidade. Com tanto amor e	carinho empregados ao Colégio ele foi recebendo cada vez mais alunos e empregando mais colaboradores. Após dois anos de seu início o Colégio mudou de endereço para poder comportar seu novo tamanho e abrir espaço para muito mais crescimento.</p>
@@ -93,8 +86,6 @@
             <p>Encorajamos o pensamento crítico e a criatividade, integrando o lúdico com métodos tradicionais para uma aprendizagem significativa.</p>
         </section>
     </section>
-
-
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -104,7 +95,6 @@
                 <p class="contato"><strong>Whatsapp:</strong>(13) 99129-0916</p>
                 <p class="contato"><strong>Email: </strong>colegiofutura2006@hotmail.com</p>
             </div>
-                
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Navegação</strong></h4>
                 <ul>
@@ -115,7 +105,6 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
-    
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Redes Sociais</strong></h4>
                     <ul class="social-media">
@@ -124,7 +113,6 @@
                     </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p style="text-align: center;" class="direitos"><a href="politicas-privacidade.html">Política de Privacidade</a></p>
             <p class ="direitos">&copy; 2024 Colégio Futura. Todos os direitos reservados.</p>
@@ -134,9 +122,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const submenuToggle = document.querySelector('.submenu-toggle');
             const submenuList = submenuToggle.nextElementSibling;
-
             submenuList.style.display = 'none';
-
             submenuToggle.addEventListener('click', function(event) {
                 event.preventDefault();
                 if (submenuList.style.display === 'none') {
@@ -148,7 +134,5 @@
         });
     </script>
     <script src="../js/script-paginas.js"></script>
-
-
 </body>
 </html>

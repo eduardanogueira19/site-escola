@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/style-matricula.css">
 </head>
 <body>
-
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
@@ -35,7 +34,6 @@
                     <li class="nav-item"><a href="matricula.html" rel="next">Matricula-se</a></li>
                     <li class="nav-item"><a href="contato.html" rel="next">Contato</a></li>
                     <li> 
-                        <!-- Botão de agende uma visita -->
                         <a style="color: white;"  href="https://wa.me/5513991290916" class="visit-button" target="_blank" rel="external">
                             Agende uma Visita
                         </a></li>
@@ -45,7 +43,6 @@
                 <button onclick="menuShow()"><img class="icon" src="../imagens/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-    
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="../index.html" rel="prev">Home</a></li>
@@ -57,42 +54,33 @@
             </ul>
         </div>
     </header>
-
     <div id="cookie-banner" class="banner">
         <p style="color: white; font-size: 14px;">Usamos este site para fornecer informações sobre matrículas e o funcionamento da escola. Ao continuar, você concorda com nossa <a style="color: #008000;" href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.</p>
         <button onclick="acceptPolicy()">Aceitar</button>
     </div>
-
     <section>
         <div class="wrapper">
             <div class="galeria-container">
                 <img src="../imagens/matriculas.jpg" alt="Imagem matriculas abertas">
             </div>
-
             <div class="container">
                 <form id="matriculaForm">
                     <label for="nome_responsavel"></label>
                     <input type="text" id="nome_responsavel" name="nome_responsavel" placeholder="Nome do Responsável"required>
-
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="E-mail" required>
-
                     <label for="telefone"></label>
                     <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
-
                     <label for="nome_aluno"></label>
                     <input type="text" id="nome_aluno" name="nome_aluno" placeholder="Nome do Aluno" required>
-
                     <label for="data_nascimento">Data de Nascimento:</label>
                     <input type="date" id="data_nascimento" name="data_nascimento" required>
-
                     <label for="curso">Curso Desejado:</label>
                     <select id="curso" name="curso" required>
                         <option value="Educação Infantil">Educação Infantil</option>
                         <option value="Ensino Fundamental I">Ensino Fundamental I</option>
                         <option value="Ensino Fundamental II">Ensino Fundamental II</option>
                     </select>
-
                     <button class="formulario" type="button" onclick="enviarParaWhatsApp()">Enviar Matrícula</button>
                 </form>
             </div>
@@ -107,7 +95,6 @@
                 <p class="contato"><strong>Whatsapp:</strong>(13) 99129-0916</p>
                 <p class="contato"><strong>Email: </strong>colegiofutura2006@hotmail.com</p>
             </div>
-                
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Navegação</strong></h4>
                 <ul>
@@ -118,7 +105,6 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
-    
             <div class="footer-section">
                 <h4 style="font-size: 16px;"><strong>Redes Sociais</strong></h4>
                     <ul class="social-media">
@@ -127,13 +113,11 @@
                     </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p style="text-align: center;" class="direitos"><a href="politicas-privacidade.html">Política de Privacidade</a></p>
             <p class ="direitos">&copy; 2024 Colégio Futura. Todos os direitos reservados.</p>
         </div>
     </footer>
-
     <script src="../js/script-matricula.js"></script>
 </body>
 </html>

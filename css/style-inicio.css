@@ -1047,7 +1047,7 @@ footer .social-media a{
     }
 
     section{
-        padding: 20px;
+        padding: 15px;
     }
     
     .image-container {
@@ -1143,5 +1143,8 @@ footer .social-media a{
     }
     section{
         padding: 30px;
+    }
+    .pedagogico{
+        padding:5px 30px;
     }
 }

@@ -217,20 +217,19 @@ img {
 }
 
 .nav-item {
-    position: relative; /* necessário para o traço embaixo */
-    margin-right: 20px; /* ajuste conforme necessário */
+    position: relative; 
+    margin-right: 20px; 
 }
 
 .nav-link {
     text-decoration: none;
-    color: black; /* cor inicial */
+    color: black;
     padding: 5px;
    
 }
 
-/* Cor e sublinhado ao passar o mouse */
 .nav-link:hover {
-    color: #008000; /* cor quando o mouse passa */
+    color: #008000; 
 }
 
 .nav-link::after {
@@ -239,13 +238,11 @@ img {
     width: 0;
     height: 3px;
     background: #008000;
-   
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-/* Expande o traço ao passar o mouse */
 .nav-link:hover::after {
     width: 100%;
 }

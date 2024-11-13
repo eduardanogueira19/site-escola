@@ -178,6 +178,46 @@ p{
     height: 60px;
     border-radius: 0; 
 }
+
+
+.nav-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative; 
+    margin-right: 20px; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+   
+}
+
+.nav-link:hover {
+    color: #008000; 
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #008000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
 .nav-list{
     display: flex;
     width: 70%;
@@ -186,8 +226,9 @@ p{
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 5px;
+    gap: 3px;
 }
+
 .nav-list li {
     display: inline-block;
 }

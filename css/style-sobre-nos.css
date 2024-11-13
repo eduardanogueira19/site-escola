@@ -33,6 +33,14 @@ header {
     align-items: center;
     padding: 8px 20px;
 }
+
+.capa {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
 .mobile-menu-icon {
     display: none;
 }
@@ -93,7 +101,7 @@ header {
     width: auto;
 }       
 h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0 0 10px 0;
     font-size:2rem;
@@ -110,7 +118,7 @@ h2{
     text-align: left;
 }
 h3{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size:0.8rem;
     margin: 0 0 10px 0;
@@ -118,7 +126,7 @@ h3{
     text-align: left;
 }
 h4{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0 0 10px 0;
     color:white;
@@ -198,8 +206,8 @@ nav ul li a:hover {
     color: #044A03;
 }
 section {
-    margin: 5px 0;
-    padding: 20px 10px;
+    margin: 5px 20px;
+    padding: 20px 0px;
     gap: 5px;
     background-color: transparent;
 }

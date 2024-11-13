@@ -208,6 +208,48 @@ img {
     border-radius: 0; 
 }
 
+
+.nav-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative; /* necessário para o traço embaixo */
+    margin-right: 20px; /* ajuste conforme necessário */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black; /* cor inicial */
+    padding: 5px;
+   
+}
+
+/* Cor e sublinhado ao passar o mouse */
+.nav-link:hover {
+    color: #008000; /* cor quando o mouse passa */
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #008000;
+   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Expande o traço ao passar o mouse */
+.nav-link:hover::after {
+    width: 100%;
+}
+
 .nav-list{
     display: flex;
     width: 70%;
@@ -269,7 +311,7 @@ main {
 }
 
 section {
-    margin: 5px 0;
+    margin: 5px 30px;
     padding: 45px 0;
     background: transparent;
 }
@@ -886,7 +928,6 @@ footer .social-media a{
 }
 
 @media screen and (max-width: 480px) {
-   
     html, body {
         font-size: 14px;
         overflow-x: hidden;
@@ -1018,9 +1059,10 @@ footer .social-media a{
     }
 
     .carousel-container {
-        width: 50vh;
+        width: 100%;
+        height:auto;
         max-width:100%;
-        margin: 20px 0;
+        margin: 20px 5px;
         overflow: hidden;
         position: relative;
         overflow-x: scroll;
@@ -1043,7 +1085,16 @@ footer .social-media a{
     }
 
     .prev, .next {
-        display: none;
+        font-size:10px;
+        display: flex;
+    }
+
+    .prev {
+        left: 0px;
+    }
+    
+    .next {
+        right: 0px;
     }
 
     section{

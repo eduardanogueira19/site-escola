@@ -798,6 +798,48 @@ footer .social-media a{
         margin: 0.4px;
     }
 
+
+    .carousel-container {
+        width: 100%;
+        height:auto;
+        max-width:100%;
+        margin: 20px 5px;
+        overflow: hidden;
+        position: relative;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+    }
+
+    .carousel-item {
+        flex: 1 0 96%;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+    }
+
+    .prev, .next {
+        font-size:10px;
+        display: flex;
+    }
+
+    .prev {
+        left: 0px;
+    }
+    
+    .next {
+        right: 0px;
+    }
+
+
+
     footer {
         padding: 10px;
         flex-direction: column; 

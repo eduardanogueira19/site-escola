@@ -822,11 +822,13 @@ footer .social-media a{
         padding: 8px;
 
     }
+    .titulo{
+        order:-2;
+    }
 
     .galeria-container{
         order: -1;
     }
-
 
     .galeria-container img {
         width: 250px;

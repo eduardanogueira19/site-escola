@@ -74,7 +74,7 @@ body::before {
     width: 300px;
     height: 350px;
     object-fit: cover;
-    border: 5px solid #036602;
+    border: 2px solid #036602;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -749,7 +749,10 @@ footer .social-media a{
         padding: 8px;
     }
 
-    
+    .titulo{
+        order:-2;
+    }
+
     .galeria-container{
         order: -1;
     }

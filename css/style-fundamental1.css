@@ -817,6 +817,10 @@ footer .social-media a{
         max-width: 100%;
         padding: 8px;
     }
+    .titulo{
+        order:-2;
+    }
+
     .galeria-container{
         order: -1;
     }

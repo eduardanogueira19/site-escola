@@ -1072,7 +1072,7 @@ footer .social-media a{
     }
 
     .carousel-item {
-        flex: 1 0 97%;
+        flex: 1 0 96%;
         margin-right: 15px;
         position: relative;
         text-align: center;
@@ -1081,7 +1081,9 @@ footer .social-media a{
     }
 
     .prev, .next {
-        font-size:9px;
+        top:310%;
+        position:absolute;
+        font-size:10px;
         display: flex;
     }
 

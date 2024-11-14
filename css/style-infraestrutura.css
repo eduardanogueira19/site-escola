@@ -790,12 +790,13 @@ footer .social-media a{
     }
     
     .galeria-container img {
-        width: 125px;  
-        height: 125px; 
+        width: 120px;  
+        height: 120px; 
         object-fit: cover; 
         border: 0.5px solid #036602; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        margin: 0.4px;
+        margin: 0.5px;
+        align-items:center;
     }
 
 
@@ -806,8 +807,7 @@ footer .social-media a{
         margin: 20px 5px;
         overflow: hidden;
         position: relative;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
+        
     }
     
     .carousel-inner {
@@ -815,11 +815,9 @@ footer .social-media a{
         transition: transform 0.5s ease-in-out;
         will-change: transform;
     }
-
     .carousel-item {
-        flex: 1 0 96%;
-        margin-right: 15px;
-        position: relative;
+        flex: 0 0 100%; 
+        margin-right: 0; 
         text-align: center;
         background-color: #f4f4f4;
         border-radius: 15px;

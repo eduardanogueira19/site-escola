@@ -132,12 +132,12 @@ h1{
     margin: 0 0 10px 0;
     font-size:2rem;
     text-align: left;
-    color:#044A03;
+    color:#008000;
 }
 h2{
     font-weight: 700;
     font-size:1.5rem;
-    color:#044A03;
+    color:#008000;
     margin: 0 0 10px 0;
     transition: color 0.8s ease; 
     font-family: 'Poppins', sans-serif; 
@@ -148,7 +148,7 @@ h3{
     font-weight: 700;
     font-size:1.025rem;
     margin: 0 0 10px 0;
-    color:#044A03;
+    color:#008000;
     text-align: left;
 }
 h4{
@@ -161,7 +161,6 @@ h4{
 p{
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    color:#044A03;
     font-size: 0.7rem;
     margin-top: 5px;
     color: black;

@@ -820,6 +820,10 @@ footer .social-media a{
     .container, .galeria-container {
         max-width: 100%;
         padding: 8px;
+
+    }
+
+    .galeria-container{
         order: -1;
     }
 

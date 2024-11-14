@@ -1066,7 +1066,7 @@ footer .social-media a{
     }
     
     .carousel-inner {
-        display: flex;
+        display: fixed;
         transition: transform 0.5s ease-in-out;
         will-change: transform;
     }
@@ -1081,7 +1081,7 @@ footer .social-media a{
     }
 
     .prev, .next {
-        font-size:10px;
+        font-size:9px;
         display: flex;
     }
 

@@ -808,7 +808,7 @@ footer .social-media a{
     }
 
     .wrapper {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 10px;
     }
@@ -816,11 +816,12 @@ footer .social-media a{
     .container, .galeria-container {
         max-width: 100%;
         padding: 8px;
+        order: -1;
     }
 
     .galeria-container img {
-        width: auto;
-        height:400;
+        width: 250px;
+        height: 250px;
         margin-bottom: 8px;
     }
 
@@ -863,6 +864,6 @@ footer .social-media a{
     }
     
     section{
-        padding: 30px;
+        padding: 20px;
     }
 }

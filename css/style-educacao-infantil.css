@@ -35,7 +35,9 @@ header {
 body::before {
     content: "";
     display: block;
+    height: 60px;
 }
+
 
 .capa {
     position: relative;

@@ -1061,30 +1061,28 @@ footer .social-media a{
         margin: 20px 5px;
         overflow: hidden;
         position: relative;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
     }
     
     .carousel-inner {
-        display: fixed;
+        display: flex;
         transition: transform 0.5s ease-in-out;
         will-change: transform;
     }
-
     .carousel-item {
-        flex: 1 0 96%;
-        margin-right: 15px;
-        position: relative;
+        flex: 0 0 100%; 
+        margin-right: 0; 
         text-align: center;
         background-color: #f4f4f4;
         border-radius: 15px;
+        scroll-snap-align: start; /* Cada item "encaixa" no início do container */
     }
 
     .prev, .next {
-        top:310%;
+        top:50%;
         position:absolute;
         font-size:10px;
         display: flex;
+        z-index: 10;
     }
 
     .prev {
@@ -1094,6 +1092,7 @@ footer .social-media a{
     .next {
         right: 0px;
     }
+
 
     section{
         padding: 15px;

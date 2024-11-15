@@ -1074,7 +1074,7 @@ footer .social-media a{
         text-align: center;
         background-color: #f4f4f4;
         border-radius: 15px;
-        scroll-snap-align: start; /* Cada item "encaixa" no início do container */
+        scroll-snap-align: start;
     }
 
     .prev, .next {

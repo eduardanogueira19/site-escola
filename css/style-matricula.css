@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box; 
 }
-
 html {
     font-size: 30px;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -16,13 +14,11 @@ body {
     background-color: white;
     text-align: center;
 }
-
 body::before {
     content: "";
     display: block;
     height: 60px; 
 }
-
 header {
     position: fixed;
     top: 0;
@@ -37,7 +33,6 @@ header {
     align-items: center;
     padding: 8px 20px;
 }
-
 body::before {
     content: "";
     display: block;
@@ -51,7 +46,6 @@ body::before {
     width: 100%;
     padding: 15px;
 }
-
 .container, .galeria-container {
     flex: 1;
     max-width: 50%;
@@ -59,12 +53,10 @@ body::before {
     background: #f4f4f4;
     border-radius: 5px;
 }
-
 .galeria-container {
     display: flex;
     flex-direction: column;
 }
-
 .galeria-container img {
     width: 100%;
     height: auto;
@@ -72,7 +64,6 @@ body::before {
     border-radius: 15px;
     margin-bottom: 10px;
 }
-
 label {
     display: block;
     margin: 5px 5px 5px;
@@ -80,7 +71,6 @@ label {
     font-size: 1rem;
     color:#888;
 }
-
 input, select {
     width: 100%;
     margin-bottom: 10px;
@@ -90,12 +80,10 @@ input, select {
     font-size: 0.8rem; 
     color:#888;
 }
-
 input::placeholder {
     font-size: 0.9rem; 
     color: #888; 
 }
-
 .formulario{
     width: 100%;
     padding: 10px;
@@ -106,24 +94,19 @@ input::placeholder {
     cursor: pointer;
     font-size: 1rem;
 }
-
 .formulario button:hover {
     background: #036602;
 }
-
 button{
     border: none;
     color: white;
 }
-/*Menu hamburguer*/
 .mobile-menu-icon {
     display: none;
 }
-
 .mobile-menu {
     display: none;
 }
-
 .visit-button {
     background-color: #044A03;
     color: white;
@@ -141,11 +124,9 @@ button{
     transform: translateY(-50%);
     right: 0;
 }
-
 .visit-button:hover {
     background-color: #036602;
 }
-
 .submenu-list {
     display: none;
     list-style-type: none;
@@ -162,27 +143,22 @@ button{
     justify-content: center; 
     flex-direction: row;
 }
-
 .submenu-list li {
     padding: 10px;
 }
-
 .submenu-list li a {
     text-decoration: none;
     color: #333;
     display: block;
     font-size: 20px;
 }
-
 .nav-item {
     position: relative;
 }
-
 .nav-item.submenu.open .submenu-list {
     display: flex;
     width: auto;
-}
-        
+}        
 h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -191,7 +167,6 @@ h1{
     text-align: center;
     color:#008000;
 }
-
 h2{
     font-weight: 700;
     font-size:1.5rem;
@@ -201,7 +176,6 @@ h2{
     font-family: 'Poppins', sans-serif; 
     text-align: left;
 }
-
 h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -210,7 +184,6 @@ h3{
     color:#008000;
     text-align: left;
 }
-
 h4{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -218,7 +191,6 @@ h4{
     color:white;
     margin-top: 10px;
 }
-
 p{
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -228,50 +200,42 @@ p{
     color: black;
     font-weight: 300;
 }
-
 img {
     width: 100%;
     height: auto;
     max-width: 100%;
     object-fit: cover; 
 }
-
 .nav-logo {
     position: absolute;
     left: 20px;
     top:20%;
     transform: translateY(-20%);
 }
-
 .nav-logo img {
     width: 65px; 
     height: 65px;
     border-radius: 0; 
 }
-
 .nav-list ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-
 .nav-item {
     position: relative; 
     margin-right: 20px; 
 }
-
 .nav-link {
     text-decoration: none;
     color: black;
     padding: 5px;
    
 }
-
 .nav-link:hover {
     color: #008000; 
 }
-
 .nav-link::after {
     content: "";
     display: block;
@@ -282,11 +246,9 @@ img {
     bottom: 0;
     left: 0;
 }
-
 .nav-link:hover::after {
     width: 100%;
 }
-
 .nav-list{
     display: flex;
     width: 70%;
@@ -297,11 +259,9 @@ img {
     padding: 0;
     gap: 3px;
 }
-
 .nav-list li {
     display: inline-block;
 }
-
 .nav-list a {
     text-decoration: none;
     color: #333;
@@ -311,25 +271,21 @@ img {
     right: 50px;
     gap: 1px;
 }
-
 nav {
     flex-grow: 1;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     color: #333;
     text-decoration: none;
@@ -337,17 +293,14 @@ nav ul li a {
     font-size: 20px;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
     color: #044A03;
 }
-
 section {
     margin: 0;
     padding: 0;
     background-color: #F4F4F4;
 }
-
 footer {
     background-color: #333;
     color: white;
@@ -356,7 +309,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 .footer-content {
     color: white;
     padding: 0px;
@@ -366,62 +318,49 @@ footer {
     max-width: 1200px;
     font-size: 18px;
 }
-
 .footer-section {
     color: white;
     padding: 0px;
     flex: 1;
     margin: 0 20px;
 }
-
 .footer-section h2 {
     margin-bottom: 10px;
 }
-
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin: 5px 0;
 }
-
 .footer-section a {
     color: white;
     text-decoration: none;
 }
-
 .footer-section a:hover {
     color: #97a197;
 }
-
 .footer-bottom {
     color: white;
     text-align: center;
     margin-top: 20px; 
 }
-
 footer .social-media a{
     font-size: 45px;
 }
-
 .contato, .direitos{
     text-decoration: none;
     color:white;
     font-size: 18px;
 }
-
-
 .direitos a{
     text-decoration: none;
     color: white;
 }
-
 .direitos a:hover{
     color: #97a197;;
 }
-
 .banner {
     position: fixed;
     bottom: 0;
@@ -435,13 +374,11 @@ footer .social-media a{
     justify-content: center;
     font-size: 14px;
     z-index: 1000;
-}
-  
+}  
 .banner p {
     margin: 0;
     padding-right: 10px;
-}
-  
+}  
 .banner button {
     background-color: #044A03; 
     color: white;
@@ -450,30 +387,24 @@ footer .social-media a{
     cursor: pointer;
     font-size: 14px;
     border-radius: 3px;
-}
-  
+}  
 .banner button:hover {
     background-color: #008000;
 }
-
 @media screen and (max-width: 768px) {
     html{
         font-size: 15px;
     }
-
     body{
         font-size: 1rem;
     }
-
     header {
         height: 60px;
         padding: 8px 15px;
     }
-
     h1 {
         font-size: 1.5rem;
     }
-
     h2 {
         font-size: 1.2rem; 
     }

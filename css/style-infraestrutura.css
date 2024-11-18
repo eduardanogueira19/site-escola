@@ -13,9 +13,8 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
     text-align: center;
-    background-image: url('../imagens/fundo/fundo-celular.jpg');
+    background-image: url('../imagens/fundo/fundo.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
@@ -293,11 +292,11 @@ main {
     padding: 5px;
     margin-top: 0px;
 }
-/*estilo seções*/
+
 section {
     margin: 5px ;
     padding: 30px 0;
-    background: transparent
+    background: transparent;
 }
 .left-align {
     text-align: left;

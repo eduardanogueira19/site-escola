@@ -13,7 +13,14 @@ body {
     color: #333;
     background-color: #f4f4f4;
     text-align: center;
+    background-image: url('../imagens/fundo/fundo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
+
+
 body::before {
     content: "";
     display: block;
@@ -507,6 +514,15 @@ footer .social-media a{
         margin: 0;
         padding: 0;
     }
+
+    body {
+        background-image: url('../imagens/fundo/fundo-celular.jpg');
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    }
+
     header {
         height: 60px;
         padding: 8px 10px;

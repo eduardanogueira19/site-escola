@@ -50,7 +50,7 @@ main {
     gap: 40px;
 }
 .contact-info {
-    background-color: #f4f4f4;
+    background-color: transparent;
     border-radius: 8px;
 }
 .map-container {
@@ -542,12 +542,11 @@ footer .social-media a{
 
     body {
         background-image: url('../imagens/fundo/fundo-celular.jpg');
-        background-repeat: no-repeat; 
-        background-size: cover; 
-        background-position: center; 
-        background-attachment: fixed; 
+        background-repeat: repeat-y; 
+        background-position: center top;
+        background-size: auto; /* Usa o tamanho original da imagem */
+        background-attachment: scroll; 
     }
-
     main {
         padding: 20px;
         margin-top: 0;

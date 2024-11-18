@@ -57,12 +57,13 @@ body::before {
     gap: 1px;
     width: 100%;
     padding: 15px;
+    background-color: transparent;
 }
 
 .container, .galeria-container {
     flex: 1;
     padding: 5px;
-    background: #f4f4f4;
+    background-color: transparent;
     border-radius: 1px;
 }
 
@@ -319,7 +320,7 @@ main {
 section {
     margin: 5px 20px;
     padding: 45px 0;
-    background-color: #F4F4F4;
+    background-color: transparent;
 }
 
 footer {
@@ -655,10 +656,10 @@ footer .social-media a{
 
     body {
         background-image: url('../imagens/fundo/fundo-celular.jpg');
-        background-repeat: no-repeat; 
-        background-size: cover; 
-        background-position: center; 
-        background-attachment: fixed; 
+        background-repeat: repeat-y; 
+        background-position: center top;
+        background-size: auto; /* Usa o tamanho original da imagem */
+        background-attachment: scroll; 
     }
 
     main {

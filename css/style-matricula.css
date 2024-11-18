@@ -6,15 +6,15 @@
 html {
     font-size: 30px;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    background-color: white;
     text-align: center;
     background-image: url('../imagens/fundo/fundo.jpg');
-    background-repeat: no-repeat; 
+    background-repeat: repeat-y; 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
@@ -33,18 +33,14 @@ header {
     width: 100%;
     height: 60px;
     background-color: #F4F4F4;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
 }
-body::before {
-    content: "";
-    display: block;
-    height: 60px; 
-}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,12 +48,13 @@ body::before {
     gap: 1px;
     width: 100%;
     padding: 15px;
+    background-color: transparent;
 }
 .container, .galeria-container {
     flex: 1;
     max-width: 50%;
     padding: 10px;
-    background: #f4f4f4;
+    background-color: transparent;
     border-radius: 5px;
 }
 .galeria-container {
@@ -71,12 +68,13 @@ body::before {
     border-radius: 15px;
     margin-bottom: 10px;
 }
+
 label {
     display: block;
-    margin: 5px 5px 5px;
+    margin: 5px 0;
     text-align: left;
     font-size: 1rem;
-    color:#888;
+    color: #888;
 }
 input, select {
     width: 100%;
@@ -86,7 +84,9 @@ input, select {
     padding: 5px; 
     font-size: 0.8rem; 
     color:#888;
+    z-index: 2;
 }
+
 input::placeholder {
     font-size: 0.9rem; 
     color: #888; 
@@ -100,6 +100,8 @@ input::placeholder {
     border-radius: 3px;
     cursor: pointer;
     font-size: 1rem;
+    position: relative;
+    z-index: 2;
 }
 .formulario button:hover {
     background: #036602;
@@ -142,7 +144,7 @@ button{
     position: absolute;
     background-color: #f4f4f4;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1;
     top: 100%;
     transform: translateX(-50%);
     width: 110vw; 
@@ -220,8 +222,8 @@ img {
     transform: translateY(-20%);
 }
 .nav-logo img {
-    width: 65px; 
-    height: 65px;
+    width: 60px; 
+    height: 60px;
     border-radius: 0; 
 }
 .nav-list ul {
@@ -280,7 +282,8 @@ img {
 }
 nav {
     flex-grow: 1;
-    padding: 10px 20px;
+    margin-bottom: 75px;
+    height: 170px;
     display: flex;
     justify-content: center;
 }
@@ -306,7 +309,7 @@ nav ul li a:hover {
 section {
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4;
+    background-color: transparent;
 }
 footer {
     background-color: #333;
@@ -586,10 +589,10 @@ footer .social-media a{
 
     body {
         background-image: url('../imagens/fundo/fundo-celular.jpg');
-        background-repeat: no-repeat; 
-        background-size: cover; 
-        background-position: center; 
-        background-attachment: fixed; 
+        background-repeat: repeat-y; 
+        background-position: center top;
+        background-size: auto; /* Usa o tamanho original da imagem */
+        background-attachment: scroll; 
     }
 
     main {

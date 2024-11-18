@@ -931,6 +931,14 @@ footer .social-media a{
         padding: 0;
     }
 
+    body {
+        background-image: url('../imagens/fundo/fundo-celular.jpg'); /* Substitua pelo caminho da sua imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: center; /* Centraliza a imagem */
+        background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+      }
+
     main {
         padding: 20px;
         margin-top: 0;

@@ -615,6 +615,12 @@ footer .social-media a{
     nav ul {
         flex-direction: column;
     }
+
+    .social {
+        text-align: left;
+        font-size: 50px;
+    }
+
     footer {
         padding: 10px;
         flex-direction: column; 

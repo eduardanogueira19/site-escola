@@ -938,7 +938,7 @@ footer .social-media a{
 
     body {
         background-image: url('../imagens/fundo/fundo-celular2.png');
-        background-position-y: -2%;
+        background-position-y: 25px;
         background-repeat: repeat-y; 
         background-size: auto;
         background-attachment: scroll; 

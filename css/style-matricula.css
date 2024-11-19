@@ -15,9 +15,9 @@ body {
     text-align: center;
     background-image: url('../imagens/fundo/fundo.jpg');
     background-repeat: repeat-y; 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll; 
 }
 
 
@@ -84,7 +84,6 @@ input, select {
     padding: 5px; 
     font-size: 0.8rem; 
     color:#888;
-    z-index: 2;
 }
 
 input::placeholder {
@@ -101,7 +100,6 @@ input::placeholder {
     cursor: pointer;
     font-size: 1rem;
     position: relative;
-    z-index: 2;
 }
 .formulario button:hover {
     background: #036602;
@@ -588,7 +586,7 @@ footer .social-media a{
     }
 
     body {
-        background-image: url('../imagens/fundo/fundo-celular.jpg');
+        background-image: url('../imagens/fundo/fundo-celular2.png');
         background-repeat: repeat-y; 
         background-position: center top;
         background-size: auto; /* Usa o tamanho original da imagem */

@@ -16,10 +16,10 @@ body {
     background-color: #f4f4f4;
     text-align: center;
     background-image: url('../imagens/fundo/fundo.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    background-repeat: repeat-y; 
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll; 
 }
 
 header {
@@ -937,10 +937,10 @@ footer .social-media a{
     }
 
     body {
-        background-image: url('../imagens/fundo/fundo-celular.jpg');
+        background-image: url('../imagens/fundo/fundo-celular2.png');
         background-repeat: repeat-y; 
         background-position: center top;
-        background-size: auto; /* Usa o tamanho original da imagem */
+        background-size: auto;
         background-attachment: scroll; 
     }
 

@@ -835,6 +835,7 @@ footer .social-media a{
 
     .galeria-container{
         order: -1;
+        margin: 0;
         width: 2000px;
         height: 250px;
     }

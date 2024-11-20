@@ -768,10 +768,12 @@ footer .social-media a{
 
     .galeria-container{
         order: -1;
+        width: 2000px;
+        height: 250px;
     }
 
     .galeria-container img {
-        width: 250px;
+        width: 2000px;
         height: 250px;
         margin-bottom: 8px;
     }

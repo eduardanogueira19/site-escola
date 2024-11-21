@@ -720,6 +720,8 @@ footer .social-media a{
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
     body {
@@ -826,7 +828,6 @@ footer .social-media a{
     }
 
     .container, .galeria-container {
-        max-width: 100%;
         padding: 8px;
     }
     .titulo{
@@ -835,15 +836,20 @@ footer .social-media a{
 
     .galeria-container{
         order: -1;
+        padding: 0;
         margin: 0;
-        width: 2000px;
+        gap:0;
+        width: 95vw;
         height: 250px;
     }
 
     .galeria-container img {
-        width: 2000px;
+        width: 100%;
         height: 250px;
-        margin-bottom: 8px;
+        object-fit: cover; 
+        object-position: center;
+        margin: 0; 
+        padding: 0; 
     }
 
     footer {

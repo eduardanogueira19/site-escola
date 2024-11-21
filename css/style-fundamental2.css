@@ -764,7 +764,8 @@ footer .social-media a{
     .nav-logo {
         position: absolute;
         left: 10px;
-        top: 15%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .nav-logo img {

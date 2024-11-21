@@ -830,6 +830,14 @@ footer .social-media a{
     .container, .galeria-container {
         padding: 8px;
     }
+
+    .container {
+        margin: 15px 0;
+        padding: 0;
+        width: 90vw;
+        text-indent: 0; 
+    }
+
     .titulo{
         order:-2;
     }
@@ -850,6 +858,7 @@ footer .social-media a{
         object-position: center;
         margin: 0; 
         padding: 0; 
+        border: none;
     }
 
     footer {

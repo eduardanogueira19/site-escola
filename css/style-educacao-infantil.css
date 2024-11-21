@@ -658,14 +658,13 @@ footer .social-media a{
 
     body {
         background-image: url('../imagens/fundo/fundo-celular2.png');
+        background-position-y: -2.5%;
         background-repeat: repeat-y; 
-        background-position: center top;
-        background-size: auto; 
+        background-size: auto;
         background-attachment: scroll; 
     }
 
     main {
-        padding: 20px;
         margin-top: 0;
     }
 
@@ -760,8 +759,14 @@ footer .social-media a{
     }
 
     .container, .galeria-container {
-        
         padding: 8px;
+    }
+
+    .container {
+        margin: 15px 0;
+        padding: 0;
+        width: 90vw;
+        text-indent: 0; 
     }
 
     .titulo{
@@ -784,6 +789,7 @@ footer .social-media a{
         object-position: center;
         margin: 0; 
         padding: 0; 
+        border:none;
     }
 
     footer {

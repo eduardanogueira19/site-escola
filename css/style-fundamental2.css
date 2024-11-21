@@ -733,13 +733,13 @@ footer .social-media a{
         background-image: url('../imagens/fundo/fundo-celular2.png');
         background-repeat: repeat-y; 
         background-position: center top;
-        background-size: auto;
+        background-size: cover;
         background-attachment: scroll; 
     }
 
     main {
-        padding: 20px;
-        margin-top: 0;
+        padding: 0;
+        margin: 0;
     }
 
     header {

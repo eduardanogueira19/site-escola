@@ -177,12 +177,12 @@ p{
 .nav-logo {
     position: absolute;
     left: 20px;
-    top:50%;
-    transform: translateY(-50%);
+    top:0%;
+    transform: translateY(0%);
 }
 .nav-logo img {
-    width: 60px; 
-    height: 60px;
+    width: 65px; 
+    height: 65px;
     border-radius: 0; 
 }
 
